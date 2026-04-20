@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adarsh Shankar — B2B Email Campaign Specialist</title>
+  <meta name="description" content="Full-funnel B2B email campaigns: Mailchimp copy and design, landing pages, live dashboards, and branded reports." />
+  <meta property="og:title" content="Adarsh Shankar — B2B Email Campaign Specialist" />
+  <meta property="og:description" content="Full-funnel B2B email campaigns: Mailchimp copy and design, landing pages, live dashboards, and branded reports." />
+  <meta name="robots" content="index,follow" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='28' font-family='system-ui,sans-serif' font-weight='700' fill='%23E07A58'>A</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+
+<a href="#hero" class="sr-only focus-show">Skip to content</a>
+
+<!-- ═══════════════════════════════════════════
+     NAV
+════════════════════════════════════════════════ -->
+<nav x-data="{ open: false }" aria-label="Main navigation" id="main-nav"
+  style="position:fixed;top:0;width:100%;z-index:50;background:rgba(20,18,16,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(48,43,38,0.6);height:var(--nav-h-mobile);">
+  <div class="container-shell" style="height:100%;display:flex;align-items:center;justify-content:space-between;">
+
+    <a href="#hero" style="color:var(--color-accent);font-size:0.875rem;font-weight:600;letter-spacing:-0.01em;" aria-label="Adarsh Shankar home">
+      Adarsh Shankar
+    </a>
+
+    <!-- Desktop links — hidden on mobile, shown via CSS at tab+ -->
+    <div id="nav-links" style="display:none;align-items:center;gap:2rem;">
+      <a href="#work"     class="nav-link" data-spy style="font-size:0.875rem;font-weight:500;color:var(--color-muted);padding-bottom:2px;transition:color 180ms;">Work</a>
+      <a href="#packages" class="nav-link" data-spy style="font-size:0.875rem;font-weight:500;color:var(--color-muted);padding-bottom:2px;transition:color 180ms;">Packages</a>
+      <a href="#proof"    class="nav-link" data-spy style="font-size:0.875rem;font-weight:500;color:var(--color-muted);padding-bottom:2px;transition:color 180ms;">Proof</a>
+      <a href="#contact"  class="btn-primary" style="padding:0.55rem 1.1rem;font-size:0.8125rem;">Let's Talk</a>
+    </div>
+
+    <!-- Hamburger — hidden on tab+ -->
+    <button id="hamburger"
+      @click="open = !open"
+      :aria-expanded="open.toString()"
+      aria-controls="mobile-menu"
+      aria-label="Toggle navigation menu"
+      style="display:flex;flex-direction:column;gap:5px;background:none;border:none;padding:10px;cursor:pointer;min-width:44px;min-height:44px;align-items:center;justify-content:center;">
+      <span style="display:block;width:22px;height:2px;background:var(--color-text);border-radius:1px;transition:transform 220ms ease,opacity 220ms ease;"
+            :style="open ? 'transform:translateY(7px) rotate(45deg)' : ''"></span>
+      <span style="display:block;width:22px;height:2px;background:var(--color-text);border-radius:1px;transition:opacity 220ms ease;"
+            :style="open ? 'opacity:0' : ''"></span>
+      <span style="display:block;width:22px;height:2px;background:var(--color-text);border-radius:1px;transition:transform 220ms ease,opacity 220ms ease;"
+            :style="open ? 'transform:translateY(-7px) rotate(-45deg)' : ''"></span>
+    </button>
+
+  </div>
+
+  <!-- Mobile overlay -->
+  <div id="mobile-menu"
+    x-show="open"
+    x-transition:enter="transition ease-out duration-200"
+    x-transition:enter-start="opacity-0"
+    x-transition:enter-end="opacity-100"
+    x-transition:leave="transition ease-in duration-150"
+    x-transition:leave-start="opacity-100"
+    x-transition:leave-end="opacity-0"
+    style="position:fixed;top:var(--nav-h-mobile);left:0;right:0;bottom:0;background:rgba(20,18,16,0.97);backdrop-filter:blur(16px);z-index:60;display:flex;flex-direction:column;padding:1.25rem 1.5rem;">
+    <a href="#work"     @click="open=false" style="display:block;padding:1.1rem 0.5rem;font-size:1.2rem;font-weight:600;color:var(--color-text);border-bottom:1px solid var(--color-border);">Work</a>
+    <a href="#packages" @click="open=false" style="display:block;padding:1.1rem 0.5rem;font-size:1.2rem;font-weight:600;color:var(--color-text);border-bottom:1px solid var(--color-border);">Packages</a>
+    <a href="#proof"    @click="open=false" style="display:block;padding:1.1rem 0.5rem;font-size:1.2rem;font-weight:600;color:var(--color-text);border-bottom:1px solid var(--color-border);">Proof</a>
+    <a href="#contact"  @click="open=false" style="display:block;padding:1.1rem 0.5rem;font-size:1.2rem;font-weight:600;color:var(--color-text);border-bottom:1px solid var(--color-border);">Contact</a>
+    <div style="padding:1.5rem 0.5rem 0;">
+      <a href="#contact" @click="open=false" class="btn-primary" style="display:flex;width:100%;justify-content:center;">Let's Talk</a>
+    </div>
+  </div>
+</nav>
+
+<style>
+  @media (min-width: 700px) {
+    #main-nav { height: var(--nav-h-desktop) !important; }
+    #nav-links { display: flex !important; }
+    #hamburger { display: none !important; }
+  }
+</style>
+
+
+<!-- ═══════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════ -->
+<header id="hero" style="min-height:100dvh;display:flex;align-items:center;padding-top:var(--nav-h-mobile);position:relative;overflow:hidden;">
+
+  <!-- Ambient glow -->
+  <div style="position:absolute;top:15%;right:-5%;width:480px;height:480px;background:rgba(224,122,88,0.05);border-radius:50%;filter:blur(100px);pointer-events:none;" aria-hidden="true"></div>
+
+  <div class="container-shell" style="width:100%;padding-block:clamp(2.5rem,6vw,5rem);">
+    <div id="hero-grid" style="display:flex;flex-direction:column;gap:3rem;align-items:flex-start;">
+
+      <!-- Left: content -->
+      <div class="reveal" style="display:flex;flex-direction:column;gap:1.375rem;max-width:640px;">
+
+        <!-- Badge -->
+        <div style="display:inline-flex;align-items:center;gap:0.5rem;background:var(--color-surface-raised);border:1px solid var(--color-border);border-radius:var(--radius-pill);padding:0.4rem 0.875rem;width:fit-content;">
+          <span style="width:6px;height:6px;border-radius:50%;background:var(--color-accent);flex-shrink:0;" aria-hidden="true"></span>
+          <span style="font-size:0.6875rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-accent);">B2B Email Campaign Specialist</span>
+        </div>
+
+        <!-- H1 -->
+        <h1 style="font-size:var(--text-hero);font-weight:800;line-height:1.04;letter-spacing:-0.03em;color:var(--color-text);margin:0;">
+          Email campaigns that don't stop at the&nbsp;send.
+        </h1>
+
+        <!-- Subheadline -->
+        <p style="font-size:clamp(0.9375rem,2.2vw,1.125rem);color:var(--color-muted);line-height:1.65;margin:0;max-width:520px;">
+          Mailchimp copy + design. Custom landing pages. Live analytics dashboards. Branded reports that prove ROI.
+        </p>
+
+        <!-- Detail line -->
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:0.35rem 0.75rem;font-size:0.6875rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-faint);">
+          <span>B2B specialist</span>
+          <span aria-hidden="true" style="color:var(--color-border);">·</span>
+          <span>Abu Dhabi-based</span>
+          <span aria-hidden="true" style="color:var(--color-border);">·</span>
+          <span>Global clients</span>
+        </div>
+
+        <!-- Availability -->
+        <div style="display:flex;align-items:center;gap:0.625rem;font-size:0.875rem;font-weight:500;color:var(--color-accent);">
+          <span style="width:8px;height:8px;border-radius:50%;background:#6DAA45;flex-shrink:0;" aria-hidden="true"></span>
+          Available now — May 2026 start
+        </div>
+
+        <!-- Buttons -->
+        <div style="display:flex;flex-wrap:wrap;gap:0.875rem;padding-top:0.25rem;">
+          <a href="#work" class="btn-primary">
+            See My Work
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#contact" class="btn-ghost">Let's Talk</a>
+        </div>
+
+        <!-- Tool badges -->
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;padding-top:0.125rem;">
+          <span class="tag">Mailchimp</span>
+          <span class="tag">Analytics</span>
+          <span class="tag">Landing Pages</span>
+          <span class="tag">Reports</span>
+        </div>
+
+      </div>
+
+      <!-- Right: overlapping frame composition (desktop only) -->
+      <div id="hero-visual" class="reveal" style="display:none;width:100%;max-width:460px;flex-shrink:0;position:relative;height:420px;" aria-hidden="true">
+
+        <!-- Background frame — Landing Page -->
+        <div style="position:absolute;right:0;top:50%;transform:translateY(-52%) rotate(-2.5deg);width:82%;aspect-ratio:4/3;background:var(--color-surface);border:1px solid var(--color-border);border-radius:12px;box-shadow:0 28px 56px rgba(0,0,0,0.42);overflow:hidden;opacity:0.82;">
+          <div class="browser-chrome-bar">
+            <div class="browser-dot"></div><div class="browser-dot"></div><div class="browser-dot"></div>
+            <span style="font-size:0.6rem;color:var(--color-faint);margin-left:8px;letter-spacing:0.04em;">Landing Page Preview</span>
+          </div>
+          <div style="padding:1.25rem;display:flex;flex-direction:column;gap:0.625rem;">
+            <div style="width:65%;height:18px;background:rgba(44,40,37,0.75);border-radius:4px;"></div>
+            <div style="width:100%;height:72px;background:rgba(44,40,37,0.55);border-radius:4px;"></div>
+            <div style="width:50%;height:10px;background:rgba(44,40,37,0.45);border-radius:4px;"></div>
+            <div style="width:38%;height:30px;background:rgba(224,122,88,0.18);border:1px solid rgba(224,122,88,0.28);border-radius:6px;margin-top:0.375rem;"></div>
+          </div>
+        </div>
+
+        <!-- Foreground frame — Email Preview -->
+        <div style="position:absolute;left:0;top:50%;transform:translateY(-38%) rotate(3deg);width:67%;aspect-ratio:3/4;background:var(--color-surface);border:1px solid var(--color-border);border-radius:12px;box-shadow:0 36px 72px rgba(0,0,0,0.55);overflow:hidden;z-index:10;">
+          <div class="browser-chrome-bar">
+            <div class="browser-dot"></div><div class="browser-dot"></div><div class="browser-dot"></div>
+            <span style="font-size:0.6rem;color:var(--color-faint);margin-left:8px;letter-spacing:0.04em;">Email Preview</span>
+          </div>
+          <div style="padding:0.875rem;display:flex;flex-direction:column;gap:0.5rem;height:calc(100% - 36px);">
+            <div style="width:100%;flex:1;max-height:80px;background:rgba(44,40,37,0.55);border-radius:4px;"></div>
+            <div style="width:80%;height:12px;background:rgba(44,40,37,0.65);border-radius:3px;"></div>
+            <div style="width:100%;height:7px;background:rgba(48,43,38,0.45);border-radius:3px;"></div>
+            <div style="width:100%;height:7px;background:rgba(48,43,38,0.38);border-radius:3px;"></div>
+            <div style="width:60%;height:7px;background:rgba(48,43,38,0.38);border-radius:3px;"></div>
+            <div style="width:100%;height:34px;background:rgba(224,122,88,0.16);border:1px solid rgba(224,122,88,0.28);border-radius:6px;margin-top:auto;display:flex;align-items:center;justify-content:center;">
+              <div style="width:30%;height:7px;background:rgba(224,122,88,0.42);border-radius:3px;"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<style>
+  @media (min-width: 1080px) {
+    #hero { padding-top: var(--nav-h-desktop); }
+    #hero-grid { flex-direction: row !important; align-items: center !important; gap: 4rem !important; }
+    #hero-visual { display: block !important; }
+  }
+</style>
+
+
+<!-- ═══════════════════════════════════════════
+     CASE STUDIES
+════════════════════════════════════════════════ -->
+<section id="work" style="border-top:1px solid var(--color-border);">
+  <div class="container-shell section-pad">
+
+    <div class="reveal" style="margin-bottom:2.5rem;">
+      <p class="section-label" style="margin-bottom:0.5rem;">Work</p>
+      <h2 style="font-size:var(--text-h2);font-weight:800;letter-spacing:-0.025em;margin:0;color:var(--color-text);">Real campaigns. Real numbers.</h2>
+    </div>
+
+    <!-- ── CASE STUDY 1 ── -->
+    <article class="card-surface reveal" style="margin-bottom:1.25rem;overflow:hidden;">
+
+      <!-- Mobile summary (hidden tab+) -->
+      <div class="cs-mobile-summary" style="padding:1.5rem 1.25rem;">
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem;margin-bottom:0.875rem;">
+          <span class="tag">SaaS</span><span class="tag">2.4k list</span><span class="tag">Cold audience</span>
+        </div>
+        <h3 style="font-size:1.1rem;font-weight:700;margin:0 0 0.875rem;color:var(--color-text);">B2B SaaS Re-Engagement</h3>
+        <div style="display:flex;align-items:baseline;gap:0.625rem;flex-wrap:wrap;margin-bottom:0.375rem;">
+          <span class="metric-badge">34%</span>
+          <span style="font-size:0.875rem;color:var(--color-text);font-weight:600;">open rate</span>
+        </div>
+        <p style="font-size:0.8125rem;color:var(--color-muted);margin:0 0 0.375rem;">vs 21% B2B average</p>
+        <p style="font-size:0.875rem;color:var(--color-muted);margin:0;line-height:1.55;">Re-engaged a cold list and captured sales-ready leads before Q2.</p>
+      </div>
+
+      <!-- Tablet/Desktop expandable (hidden mobile) -->
+      <div class="cs-full" x-data="{ open: false }" style="display:none;">
+        <div style="padding:2rem 2rem 1.75rem;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:1rem;margin-bottom:1.25rem;">
+            <div>
+              <div style="display:flex;flex-wrap:wrap;gap:0.4rem;margin-bottom:0.75rem;">
+                <span class="tag">SaaS</span><span class="tag">2.4k list</span><span class="tag">Cold audience</span>
+              </div>
+              <h3 style="font-size:var(--text-h3);font-weight:700;margin:0;color:var(--color-text);">B2B SaaS Re-Engagement</h3>
+            </div>
+            <button @click="open = !open" :aria-expanded="open.toString()" aria-controls="cs1-details" class="btn-ghost"
+              style="padding:0.6rem 1rem;font-size:0.8125rem;flex-shrink:0;gap:0.4rem;">
+              <span x-text="open ? 'Close' : 'See Details'">See Details</span>
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"
+                style="transition:transform 200ms;" :style="open ? 'transform:rotate(180deg)' : ''">
+                <path d="M2 4.5l4.5 4.5 4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+          <div style="display:flex;align-items:baseline;gap:0.75rem;flex-wrap:wrap;margin-bottom:0.625rem;">
+            <span class="metric-badge">34%</span>
+            <span style="font-size:1rem;color:var(--color-text);font-weight:600;">open rate</span>
+            <span style="font-size:0.875rem;color:var(--color-muted);">vs 21% B2B average</span>
+          </div>
+          <p style="font-size:0.9375rem;color:var(--color-muted);margin:0;">Re-engaged a cold list and captured sales-ready leads before Q2.</p>
+        </div>
+
+        <div id="cs1-details"
+          x-show="open"
+          x-transition:enter="transition ease-out duration-200"
+          x-transition:enter-start="opacity-0 -translate-y-1"
+          x-transition:enter-end="opacity-100 translate-y-0"
+          x-transition:leave="transition ease-in duration-150"
+          x-transition:leave-start="opacity-100"
+          x-transition:leave-end="opacity-0"
+          style="border-top:1px solid var(--color-border);padding:2rem;display:grid;gap:2rem;">
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;">
+            <div>
+              <p style="font-size:0.6875rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-muted);font-weight:600;margin:0 0 0.625rem;">The Problem</p>
+              <p style="font-size:0.9375rem;color:var(--color-text);margin:0;line-height:1.6;">2,400 subscribers inactive for 60+ days. Needed warm leads for pipeline before Q2.</p>
+            </div>
+            <div>
+              <p style="font-size:0.6875rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-muted);font-weight:600;margin:0 0 0.625rem;">Built</p>
+              <ul style="margin:0;padding-left:1.125rem;font-size:0.9375rem;color:var(--color-text);display:flex;flex-direction:column;gap:0.35rem;">
+                <li>3-email Mailchimp sequence</li>
+                <li>Custom landing page</li>
+                <li>Live analytics dashboard</li>
+                <li>Branded PDF report</li>
+              </ul>
+            </div>
+          </div>
+
+          <div style="background:var(--color-surface-raised);border:1px solid var(--color-border);border-left:3px solid var(--color-accent);border-radius:8px;padding:1.125rem 1.25rem;">
+            <p style="font-size:0.6875rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-accent);font-weight:600;margin:0 0 0.375rem;">Key Decision</p>
+            <p style="font-size:0.9375rem;color:var(--color-text);margin:0;line-height:1.6;">Switched from feature-list copy to pain-point copy and reduced the landing page form to two fields.</p>
+          </div>
+
+          <div>
+            <p style="font-size:0.6875rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-muted);font-weight:600;margin:0 0 0.875rem;">Stats</p>
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;">
+              <div class="stat-card"><div class="stat-value">34%</div><div class="stat-label">Open Rate</div></div>
+              <div class="stat-card"><div class="stat-value">4.2%</div><div class="stat-label">CTR</div></div>
+              <div class="stat-card"><div class="stat-value">61</div><div class="stat-label">Leads Captured</div></div>
+              <div class="stat-card"><div class="stat-value">18%</div><div class="stat-label">Subject Line Lift</div></div>
+            </div>
+          </div>
+
+          <div>
+            <p style="font-size:0.6875rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-muted);font-weight:600;margin:0 0 0.5rem;">Why It Worked</p>
+            <p style="font-size:0.9375rem;color:var(--color-text);margin:0;line-height:1.6;">Segmentation plus a dedicated landing page outperformed homepage traffic by 3×.</p>
+          </div>
+
+          <div>
+            <p style="font-size:0.6875rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-muted);font-weight:600;margin:0 0 0.875rem;">Gallery</p>
+            <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:0.625rem;">
+              <div class="placeholder-frame" style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:0.625rem;text-align:center;padding:0.25rem;">Email 1</div>
+              <div class="placeholder-frame" style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:0.625rem;text-align:center;padding:0.25rem;">Email 2</div>
+              <div class="placeholder-frame" style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:0.625rem;text-align:center;padding:0.25rem;">LP Desktop</div>
+              <div class="placeholder-frame" style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:0.625rem;text-align:center;padding:0.25rem;">LP Mobile</div>
+              <div class="placeholder-frame" style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:0.625rem;text-align:center;padding:0.25rem;">Dashboard</div>
+              <div class="placeholder-frame" style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:0.625rem;text-align:center;padding:0.25rem;">Report</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </article>
+
+    <!-- ── CASE STUDY 2 ── -->
+    <article class="card-surface reveal" style="overflow:hidden;">
+
+      <!-- Mobile summary -->
+      <div class="cs-mobile-summary" style="padding:1.5rem 1.25rem;">
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem;margin-bottom:0.875rem;">
+          <span class="tag">Campaign</span><span class="tag">B2B</span><span class="tag">Reporting</span>
+        </div>
+        <h3 style="font-size:1.1rem;font-weight:700;margin:0 0 0.875rem;color:var(--color-text);">Campaign Funnel Build</h3>
+        <p style="font-size:0.8125rem;color:var(--color-muted);margin:0 0 0.375rem;font-style:italic;">Final metric — coming soon</p>
+        <p style="font-size:0.875rem;color:var(--color-muted);margin:0;">Replace with final result summary.</p>
+      </div>
+
+      <!-- Tablet/Desktop expandable -->
+      <div class="cs-full" x-data="{ open: false }" style="display:none;">
+        <div style="padding:2rem 2rem 1.75rem;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:1rem;margin-bottom:1.25rem;">
+            <div>
+              <div style="display:flex;flex-wrap:wrap;gap:0.4rem;margin-bottom:0.75rem;">
+                <span class="tag">Campaign</span><span class="tag">B2B</span><span class="tag">Reporting</span>
+              </div>
+              <h3 style="font-size:var(--text-h3);font-weight:700;margin:0;color:var(--color-text);">Campaign Funnel Build</h3>
+            </div>
+            <button @click="open = !open" :aria-expanded="open.toString()" aria-controls="cs2-details" class="btn-ghost"
+              style="padding:0.6rem 1rem;font-size:0.8125rem;flex-shrink:0;gap:0.4rem;">
+              <span x-text="open ? 'Close' : 'See Details'">See Details</span>
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"
+                style="transition:transform 200ms;" :style="open ? 'transform:rotate(180deg)' : ''">
+                <path d="M2 4.5l4.5 4.5 4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+          <p style="font-size:0.9375rem;color:var(--color-muted);margin:0;font-style:italic;">Final metric — coming soon. Replace with final result summary.</p>
+        </div>
+
+        <div id="cs2-details"
+          x-show="open"
+          x-transition:enter="transition ease-out duration-200"
+          x-transition:enter-start="opacity-0"
+          x-transition:enter-end="opacity-100"
+          x-transition:leave="transition ease-in duration-150"
+          x-transition:leave-start="opacity-100"
+          x-transition:leave-end="opacity-0"
+          style="border-top:1px solid var(--color-border);padding:2rem;display:grid;gap:2rem;">
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;">
+            <div>
+              <p style="font-size:0.6875rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-muted);font-weight:600;margin:0 0 0.625rem;">The Problem</p>
+              <p style="font-size:0.9375rem;color:var(--color-text);margin:0;line-height:1.6;">Add client situation.</p>
+            </div>
+            <div>
+              <p style="font-size:0.6875rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-muted);font-weight:600;margin:0 0 0.625rem;">Built</p>
+              <ul style="margin:0;padding-left:1.125rem;font-size:0.9375rem;color:var(--color-text);display:flex;flex-direction:column;gap:0.35rem;">
+                <li>Email campaign</li><li>Landing page</li><li>Analytics dashboard</li><li>Branded report</li>
+              </ul>
+            </div>
+          </div>
+
+          <div style="background:var(--color-surface-raised);border:1px solid var(--color-border);border-left:3px solid var(--color-accent);border-radius:8px;padding:1.125rem 1.25rem;">
+            <p style="font-size:0.6875rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-accent);font-weight:600;margin:0 0 0.375rem;">Key Decision</p>
+            <p style="font-size:0.9375rem;color:var(--color-text);margin:0;line-height:1.6;">Add final strategy decision.</p>
+          </div>
+
+          <div>
+            <p style="font-size:0.6875rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-muted);font-weight:600;margin:0 0 0.875rem;">Stats</p>
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;">
+              <div class="stat-card"><div class="stat-value" style="color:var(--color-faint);font-size:1rem;">TBD</div><div class="stat-label">Metric 1</div></div>
+              <div class="stat-card"><div class="stat-value" style="color:var(--color-faint);font-size:1rem;">TBD</div><div class="stat-label">Metric 2</div></div>
+              <div class="stat-card"><div class="stat-value" style="color:var(--color-faint);font-size:1rem;">TBD</div><div class="stat-label">Metric 3</div></div>
+              <div class="stat-card"><div class="stat-value" style="color:var(--color-faint);font-size:1rem;">TBD</div><div class="stat-label">Metric 4</div></div>
+            </div>
+          </div>
+
+          <div>
+            <p style="font-size:0.6875rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-muted);font-weight:600;margin:0 0 0.5rem;">Why It Worked</p>
+            <p style="font-size:0.9375rem;color:var(--color-text);margin:0;line-height:1.6;">Add final lesson.</p>
+          </div>
+
+          <div>
+            <p style="font-size:0.6875rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-muted);font-weight:600;margin:0 0 0.875rem;">Gallery</p>
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.625rem;">
+              <div class="placeholder-frame" style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:0.625rem;">Email</div>
+              <div class="placeholder-frame" style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:0.625rem;">Landing Page</div>
+              <div class="placeholder-frame" style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:0.625rem;">Dashboard</div>
+              <div class="placeholder-frame" style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:0.625rem;">Report</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </article>
+
+  </div>
+</section>
+
+<style>
+  .cs-mobile-summary { display: block; }
+  .cs-full           { display: none !important; }
+  @media (min-width: 700px) {
+    .cs-mobile-summary { display: none !important; }
+    .cs-full           { display: block !important; }
+  }
+</style>
+
+
+<!-- ═══════════════════════════════════════════
+     PACKAGES
+════════════════════════════════════════════════ -->
+<section id="packages" style="border-top:1px solid var(--color-border);background:var(--color-surface);">
+  <div class="container-shell section-pad">
+
+    <div class="reveal" style="margin-bottom:2.5rem;">
+      <p class="section-label" style="margin-bottom:0.5rem;">Packages</p>
+      <h2 style="font-size:var(--text-h2);font-weight:800;letter-spacing:-0.025em;margin:0 0 0.5rem;color:var(--color-text);">Three ways to start.</h2>
+      <p style="font-size:0.9375rem;color:var(--color-muted);margin:0;">Scoped to emails, list size, tools, and deliverables.</p>
+    </div>
+
+    <!-- Mobile compact table (hidden tab+) -->
+    <div id="pkg-mobile" class="card-surface reveal" style="overflow:hidden;">
+      <div class="phone-pricing-grid" style="border-bottom:1px solid var(--color-border);">
+        <div class="pricing-col">
+          <p class="pricing-name" style="color:var(--color-muted);margin:0 0 4px;">Starter</p>
+          <p class="pricing-price" style="color:var(--color-text);margin:0;">$350–$500</p>
+        </div>
+        <div class="pricing-col" style="background:rgba(224,122,88,0.07);border-top:2px solid var(--color-accent);">
+          <p class="pricing-name" style="color:var(--color-accent);margin:0 0 4px;">Growth</p>
+          <p class="pricing-price" style="color:var(--color-text);margin:0;">$850–$1,200</p>
+        </div>
+        <div class="pricing-col">
+          <p class="pricing-name" style="color:var(--color-muted);margin:0 0 4px;">Full&nbsp;Funnel</p>
+          <p class="pricing-price" style="color:var(--color-text);margin:0;">$1,400–<br>$2,000/mo</p>
+        </div>
+      </div>
+      <div class="phone-pricing-grid">
+        <div class="pricing-col">
+          <p class="pricing-bullet" style="color:var(--color-muted);margin:0 0 3px;">1–3 emails</p>
+          <p class="pricing-bullet" style="color:var(--color-muted);margin:0 0 3px;">No page</p>
+          <p class="pricing-bullet" style="color:var(--color-muted);margin:0;">Metrics summary</p>
+        </div>
+        <div class="pricing-col" style="background:rgba(224,122,88,0.04);">
+          <p class="pricing-bullet" style="color:var(--color-muted);margin:0 0 3px;">1–3 emails</p>
+          <p class="pricing-bullet" style="color:var(--color-muted);margin:0 0 3px;">Landing page</p>
+          <p class="pricing-bullet" style="color:var(--color-muted);margin:0;">Live dashboard</p>
+        </div>
+        <div class="pricing-col">
+          <p class="pricing-bullet" style="color:var(--color-muted);margin:0 0 3px;">2–4/mo</p>
+          <p class="pricing-bullet" style="color:var(--color-muted);margin:0 0 3px;">Landing page</p>
+          <p class="pricing-bullet" style="color:var(--color-muted);margin:0;">Monthly report</p>
+        </div>
+      </div>
+      <div style="padding:1rem 0.75rem;border-top:1px solid var(--color-border);">
+        <a href="#contact" class="btn-primary" style="display:flex;width:100%;justify-content:center;">Get a Quote</a>
+      </div>
+    </div>
+
+    <!-- Full 3-card layout (hidden mobile, shown tab+) -->
+    <div id="pkg-cards" style="display:none;grid-template-columns:1fr 1fr 1fr;gap:1.25rem;align-items:stretch;">
+
+      <!-- Starter -->
+      <div class="package-card-base reveal" style="padding:1.75rem;display:flex;flex-direction:column;gap:1.125rem;">
+        <div>
+          <p style="font-size:0.75rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-muted);margin:0 0 0.375rem;">Starter</p>
+          <p style="font-size:0.9375rem;font-weight:600;color:var(--color-text);margin:0 0 0.25rem;">One-off campaigns</p>
+          <p style="font-size:0.8125rem;color:var(--color-muted);margin:0;line-height:1.5;">Copywriting, clean Mailchimp design, basic testing, metrics summary.</p>
+        </div>
+        <div style="flex:1;border-top:1px solid var(--color-border);padding-top:1rem;">
+          <div class="pkg-row"><span class="pkg-row-label">Emails</span><span class="pkg-row-value">1–3</span></div>
+          <div class="pkg-row"><span class="pkg-row-label">Landing page</span><span class="pkg-row-dash">—</span></div>
+          <div class="pkg-row"><span class="pkg-row-label">Dashboard</span><span class="pkg-row-dash">—</span></div>
+          <div class="pkg-row"><span class="pkg-row-label">Report</span><span class="pkg-row-value">Metrics summary</span></div>
+          <div class="pkg-row"><span class="pkg-row-label">Timeline</span><span class="pkg-row-value">5–7 days</span></div>
+        </div>
+        <div>
+          <p style="font-size:1.875rem;font-weight:800;color:var(--color-text);margin:0 0 1rem;letter-spacing:-0.02em;">$350–$500</p>
+          <a href="#contact" class="btn-ghost" style="display:flex;width:100%;justify-content:center;">Get a Quote</a>
+        </div>
+      </div>
+
+      <!-- Growth (featured) -->
+      <div class="package-card-featured reveal" style="padding:1.75rem;padding-top:2.75rem;display:flex;flex-direction:column;gap:1.125rem;">
+        <div style="position:absolute;top:-1px;left:50%;transform:translateX(-50%);">
+          <span style="background:var(--color-accent);color:var(--color-bg);font-size:0.6875rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:0.3rem 1rem;border-radius:0 0 8px 8px;display:block;white-space:nowrap;">Most Popular</span>
+        </div>
+        <div>
+          <p style="font-size:0.75rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-accent);margin:0 0 0.375rem;">Growth</p>
+          <p style="font-size:0.9375rem;font-weight:600;color:var(--color-text);margin:0 0 0.25rem;">Lead gen + full tracking</p>
+          <p style="font-size:0.8125rem;color:var(--color-muted);margin:0;line-height:1.5;">Copywriting, Mailchimp design, A/B testing, landing page, live reporting.</p>
+        </div>
+        <div style="flex:1;border-top:1px solid rgba(224,122,88,0.2);padding-top:1rem;">
+          <div class="pkg-row"><span class="pkg-row-label">Emails</span><span class="pkg-row-value">1–3</span></div>
+          <div class="pkg-row"><span class="pkg-row-label">Landing page</span><span style="color:#6DAA45;font-weight:600;font-size:0.875rem;">Yes</span></div>
+          <div class="pkg-row"><span class="pkg-row-label">Dashboard</span><span style="color:#6DAA45;font-weight:600;font-size:0.875rem;">Live</span></div>
+          <div class="pkg-row"><span class="pkg-row-label">Report</span><span class="pkg-row-value">Full branded report</span></div>
+          <div class="pkg-row"><span class="pkg-row-label">Timeline</span><span class="pkg-row-value">10–14 days</span></div>
+        </div>
+        <div>
+          <p style="font-size:1.875rem;font-weight:800;color:var(--color-text);margin:0 0 1rem;letter-spacing:-0.02em;">$850–$1,200</p>
+          <a href="#contact" class="btn-primary" style="display:flex;width:100%;justify-content:center;">Get a Quote</a>
+        </div>
+      </div>
+
+      <!-- Full Funnel -->
+      <div class="package-card-base reveal" style="padding:1.75rem;display:flex;flex-direction:column;gap:1.125rem;">
+        <div>
+          <p style="font-size:0.75rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-muted);margin:0 0 0.375rem;">Full Funnel</p>
+          <p style="font-size:0.9375rem;font-weight:600;color:var(--color-text);margin:0 0 0.25rem;">Ongoing monthly marketing</p>
+          <p style="font-size:0.8125rem;color:var(--color-muted);margin:0;line-height:1.5;">Monthly emails, landing page iteration, reporting rhythm, conversion visibility.</p>
+        </div>
+        <div style="flex:1;border-top:1px solid var(--color-border);padding-top:1rem;">
+          <div class="pkg-row"><span class="pkg-row-label">Emails</span><span class="pkg-row-value">2–4/month</span></div>
+          <div class="pkg-row"><span class="pkg-row-label">Landing page</span><span class="pkg-row-value">Monthly</span></div>
+          <div class="pkg-row"><span class="pkg-row-label">Dashboard</span><span class="pkg-row-value">Monthly</span></div>
+          <div class="pkg-row"><span class="pkg-row-label">Report</span><span class="pkg-row-value">Monthly branded</span></div>
+          <div class="pkg-row"><span class="pkg-row-label">Timeline</span><span class="pkg-row-value">Monthly retainer</span></div>
+        </div>
+        <div>
+          <p style="font-size:1.875rem;font-weight:800;color:var(--color-text);margin:0 0 1rem;letter-spacing:-0.02em;">$1,400–$2,000<span style="font-size:1rem;font-weight:500;color:var(--color-muted);">/mo</span></p>
+          <a href="#contact" class="btn-ghost" style="display:flex;width:100%;justify-content:center;">Get a Quote</a>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="reveal" style="font-size:0.8125rem;color:var(--color-faint);margin-top:1.5rem;text-align:center;">
+      Single emails, standalone dashboards, and custom reports are also available.
+    </p>
+
+  </div>
+</section>
+
+<style>
+  @media (min-width: 700px) {
+    #pkg-mobile { display: none !important; }
+    #pkg-cards  { display: grid !important; }
+  }
+</style>
+
+
+<!-- ═══════════════════════════════════════════
+     PROOF — DASHBOARD + REPORTS
+════════════════════════════════════════════════ -->
+<section id="proof" style="border-top:1px solid var(--color-border);">
+  <div class="container-shell section-pad">
+
+    <div class="reveal" style="margin-bottom:2rem;text-align:center;">
+      <p class="section-label" style="margin-bottom:0.5rem;">Proof</p>
+      <p style="font-size:clamp(0.9375rem,2vw,1.0625rem);color:var(--color-muted);max-width:580px;margin:0 auto;line-height:1.65;">
+        A live campaign analytics dashboard — tracking email opens, landing page visits, and lead conversions in real time.
+      </p>
+    </div>
+
+    <!-- Video frame -->
+    <div class="reveal" style="max-width:880px;margin:0 auto 1.5rem;">
+      <div class="browser-chrome" style="box-shadow:var(--shadow-video);">
+        <div class="browser-chrome-bar">
+          <div class="browser-dot"></div><div class="browser-dot"></div><div class="browser-dot"></div>
+          <span style="font-size:0.6875rem;color:var(--color-faint);margin-left:10px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1;">Campaign Analytics Dashboard — Live</span>
+        </div>
+        <div style="position:relative;background:#0F0D0B;aspect-ratio:16/9;overflow:hidden;">
+
+          <video id="dashboard-video"
+            preload="none" muted loop playsinline
+            poster="/assets/video/dashboard-poster.jpg"
+            aria-label="Campaign analytics dashboard demo — email opens, landing page visits, and lead conversions"
+            style="width:100%;height:100%;object-fit:cover;display:block;">
+          </video>
+
+          <!-- Poster placeholder if video/poster absent -->
+          <div id="dashboard-poster" style="display:none;position:absolute;inset:0;align-items:center;justify-content:center;flex-direction:column;gap:0.875rem;background:var(--color-surface);"
+            class="placeholder-frame">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <rect x="3" y="7" width="34" height="26" rx="3" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M3 14h34" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="7" cy="10.5" r="1.25" fill="currentColor"/>
+              <circle cx="11.5" cy="10.5" r="1.25" fill="currentColor"/>
+            </svg>
+            <span style="font-size:0.8125rem;">Dashboard Preview Coming Soon</span>
+          </div>
+
+          <!-- Mobile play overlay (removed on tab+) -->
+          <div id="video-play-overlay" class="video-overlay"
+            role="button" tabindex="0" aria-label="Tap to play dashboard demo"
+            onkeydown="if(event.key==='Enter'||event.key===' ')this.click()">
+            <div class="play-btn" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M7 4l12 7-12 7V4z" fill="white"/></svg>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <p class="reveal" style="text-align:center;font-size:0.875rem;color:var(--color-muted);margin-bottom:4rem;">
+      Email opens → landing page visits → lead conversions. Real time. No exports.
+    </p>
+
+    <!-- Report previews -->
+    <div class="reveal">
+      <h3 style="font-size:var(--text-h3);font-weight:700;color:var(--color-text);margin:0 0 0.375rem;text-align:center;">Campaign Reports</h3>
+      <p style="font-size:0.875rem;color:var(--color-muted);text-align:center;margin:0 0 2rem;">Built for boardrooms, not filing cabinets.</p>
+
+      <div id="reports-grid" style="display:grid;grid-template-columns:1fr;gap:1.25rem;max-width:860px;margin:0 auto;">
+
+        <!-- Report 1 -->
+        <div class="report-paper">
+          <div class="report-paper-header">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem;">
+              <span style="font-size:0.6875rem;letter-spacing:0.08em;text-transform:uppercase;color:#8C7A70;font-weight:700;">Campaign Report</span>
+              <span style="font-size:0.6875rem;color:#B0A090;">Q1 2026</span>
+            </div>
+            <div style="height:2px;width:100%;background:rgba(0,0,0,0.08);border-radius:1px;overflow:hidden;">
+              <div style="height:100%;width:72%;background:#E07A58;border-radius:1px;"></div>
+            </div>
+          </div>
+          <div style="padding:1.25rem;display:flex;flex-direction:column;gap:0.75rem;">
+            <div style="height:10px;width:80%;background:rgba(0,0,0,0.1);border-radius:3px;"></div>
+            <div style="height:64px;background:rgba(0,0,0,0.07);border-radius:5px;"></div>
+            <div style="display:flex;gap:0.625rem;">
+              <div style="height:8px;width:38%;background:rgba(0,0,0,0.08);border-radius:3px;"></div>
+              <div style="height:8px;width:28%;background:rgba(224,122,88,0.25);border-radius:3px;"></div>
+            </div>
+            <p style="font-size:0.6875rem;color:#9C8A7A;text-align:center;margin:0;padding-top:0.25rem;">Campaign Report — Page 1</p>
+          </div>
+        </div>
+
+        <!-- Report 2 -->
+        <div class="report-paper">
+          <div class="report-paper-header">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem;">
+              <span style="font-size:0.6875rem;letter-spacing:0.08em;text-transform:uppercase;color:#8C7A70;font-weight:700;">Campaign Report</span>
+              <span style="font-size:0.6875rem;color:#B0A090;">Q1 2026</span>
+            </div>
+            <div style="height:2px;width:100%;background:rgba(0,0,0,0.08);border-radius:1px;overflow:hidden;">
+              <div style="height:100%;width:48%;background:#E07A58;border-radius:1px;"></div>
+            </div>
+          </div>
+          <div style="padding:1.25rem;display:flex;flex-direction:column;gap:0.75rem;">
+            <div style="height:10px;width:60%;background:rgba(0,0,0,0.1);border-radius:3px;"></div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.625rem;">
+              <div style="height:52px;background:rgba(0,0,0,0.07);border-radius:5px;"></div>
+              <div style="height:52px;background:rgba(0,0,0,0.07);border-radius:5px;"></div>
+            </div>
+            <div style="height:8px;width:70%;background:rgba(0,0,0,0.08);border-radius:3px;"></div>
+            <p style="font-size:0.6875rem;color:#9C8A7A;text-align:center;margin:0;padding-top:0.25rem;">Campaign Report — Page 2</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  @media (min-width: 700px) {
+    #video-play-overlay { display: none !important; }
+    #reports-grid { grid-template-columns: 1fr 1fr !important; }
+  }
+</style>
+
+
+<!-- ═══════════════════════════════════════════
+     TESTIMONIAL
+════════════════════════════════════════════════ -->
+<section id="testimonials" style="border-top:1px solid var(--color-border);background:var(--color-surface);">
+  <div class="container-shell section-pad">
+
+    <div class="reveal" style="text-align:center;margin-bottom:2rem;">
+      <h2 style="font-size:var(--text-h2);font-weight:800;letter-spacing:-0.025em;margin:0;color:var(--color-text);">Their words.</h2>
+    </div>
+
+    <div class="reveal" style="max-width:640px;margin:0 auto;">
+      <div class="card-surface" style="padding:2rem 2rem 1.75rem;">
+        <div class="quote-mark" aria-hidden="true">"</div>
+        <blockquote style="margin:0.375rem 0 1.5rem;font-size:clamp(1rem,2.2vw,1.125rem);color:var(--color-text);line-height:1.7;font-style:italic;">
+          Adarsh built a full campaign + dashboard that showed us exactly why our last agency approach failed. The report alone was worth the project fee.
+        </blockquote>
+        <footer style="display:flex;align-items:center;gap:0.875rem;">
+          <div class="avatar-initials" aria-hidden="true">SK</div>
+          <div>
+            <cite style="font-style:normal;font-weight:600;color:var(--color-text);font-size:0.9375rem;display:block;">Sarah K.</cite>
+            <p style="font-size:0.8125rem;color:var(--color-muted);margin:0;">Marketing Director, B2B SaaS Company</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════════ -->
+<section id="contact" style="border-top:1px solid var(--color-border);">
+  <div class="container-shell section-pad">
+
+    <div class="reveal" style="margin-bottom:2.5rem;">
+      <p class="section-label" style="margin-bottom:0.5rem;">Contact</p>
+      <h2 style="font-size:var(--text-h2);font-weight:800;letter-spacing:-0.025em;margin:0 0 0.5rem;color:var(--color-text);">Let's build your campaign.</h2>
+      <p style="font-size:0.9375rem;color:var(--color-muted);margin:0;">Abu Dhabi · Global clients · I'll flag bad ideas before you pay to build them.</p>
+    </div>
+
+    <div id="contact-grid" style="display:flex;flex-direction:column;gap:2.5rem;align-items:flex-start;">
+
+      <!-- Left: headshot + links -->
+      <div id="contact-left" style="width:100%;">
+
+        <!-- Headshot -->
+        <div style="margin-bottom:1.5rem;">
+          <picture>
+            <source media="(min-width:1080px)" srcset="/assets/headshot/headshot-desktop.jpg" />
+            <source media="(min-width:700px)"  srcset="/assets/headshot/headshot-tablet.jpg" />
+            <img src="/assets/headshot/headshot-mobile.jpg"
+              alt="Adarsh Shankar — B2B Email Campaign Specialist, Abu Dhabi"
+              width="240" height="320" loading="lazy"
+              data-placeholder="headshot-ph"
+              style="width:100%;max-width:200px;aspect-ratio:3/4;object-fit:cover;border-radius:var(--radius-card);border:1px solid var(--color-border);" />
+          </picture>
+          <div id="headshot-ph" class="headshot-placeholder" style="display:none;max-width:200px;" aria-hidden="true">AS</div>
+        </div>
+
+        <!-- Links -->
+        <div style="display:flex;flex-direction:column;gap:0.75rem;">
+          <a href="mailto:hello@adarshs.com" target="_blank" rel="noopener noreferrer"
+            style="display:inline-flex;align-items:center;gap:0.625rem;font-size:0.875rem;color:var(--color-muted);transition:color 180ms;"
+            onmouseover="this.style.color='var(--color-accent)'" onmouseout="this.style.color='var(--color-muted)'">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="1" y="3" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.25"/><path d="M1 5.5l7 4.5 7-4.5" stroke="currentColor" stroke-width="1.25"/></svg>
+            hello@adarshs.com
+          </a>
+          <a href="https://www.upwork.com" target="_blank" rel="noopener noreferrer"
+            style="display:inline-flex;align-items:center;gap:0.625rem;font-size:0.875rem;color:var(--color-muted);transition:color 180ms;"
+            onmouseover="this.style.color='var(--color-accent)'" onmouseout="this.style.color='var(--color-muted)'">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8a6 6 0 1 1 12 0A6 6 0 0 1 2 8z" stroke="currentColor" stroke-width="1.25"/><path d="M5.5 9.5c.4.8 1.2 1.5 2.5 1.5s2-.8 2-1.5S9 8 8 8s-2-.5-2-1.5S7 5 8 5c1.2 0 2 .7 2.4 1.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/></svg>
+            Upwork Profile
+          </a>
+          <a href="https://www.fiverr.com" target="_blank" rel="noopener noreferrer"
+            style="display:inline-flex;align-items:center;gap:0.625rem;font-size:0.875rem;color:var(--color-muted);transition:color 180ms;"
+            onmouseover="this.style.color='var(--color-accent)'" onmouseout="this.style.color='var(--color-muted)'">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="1.5" y="1.5" width="13" height="13" rx="2.5" stroke="currentColor" stroke-width="1.25"/><path d="M5 11V7.5h4M5 9h2.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/><circle cx="11" cy="5.25" r="1" fill="currentColor"/></svg>
+            Fiverr Profile
+          </a>
+          <a href="https://linkedin.com/in/adarshshankar" target="_blank" rel="noopener noreferrer"
+            style="display:inline-flex;align-items:center;gap:0.625rem;font-size:0.875rem;color:var(--color-muted);transition:color 180ms;"
+            onmouseover="this.style.color='var(--color-accent)'" onmouseout="this.style.color='var(--color-muted)'">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="1.5" y="1.5" width="13" height="13" rx="2.5" stroke="currentColor" stroke-width="1.25"/><path d="M4.5 7v5M4.5 5v-.25" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/><path d="M7.5 12V9.25A2.25 2.25 0 0 1 12 9.25V12M7.5 7v5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div id="contact-right" style="width:100%;max-width:560px;">
+        <div x-data="{ sent: false }">
+
+          <form x-show="!sent" @submit.prevent="sent = true"
+            style="display:flex;flex-direction:column;gap:1.25rem;" aria-label="Contact form" novalidate>
+
+            <div class="form-field">
+              <label class="form-label" for="f-name">Name</label>
+              <input class="form-input" type="text" id="f-name" name="name" placeholder="Your name" required autocomplete="name" />
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="f-email">Email</label>
+              <input class="form-input" type="email" id="f-email" name="email" placeholder="you@company.com" required autocomplete="email" />
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="f-need">What do you need?</label>
+              <select class="form-select" id="f-need" name="need" required>
+                <option value="" disabled selected>Select an option</option>
+                <option>Single email</option>
+                <option>Email sequence</option>
+                <option>Landing page</option>
+                <option>Analytics dashboard</option>
+                <option>Full funnel package</option>
+                <option>Not sure — let's talk</option>
+              </select>
+            </div>
+
+            <!-- Budget (hidden mobile, visible tab+) -->
+            <div class="form-field" id="f-budget-wrap" style="display:none;">
+              <label class="form-label" for="f-budget">Approximate budget</label>
+              <select class="form-select" id="f-budget" name="budget">
+                <option value="" disabled selected>Select a range</option>
+                <option>Under $500</option>
+                <option>$500–$1,000</option>
+                <option>$1,000–$2,500</option>
+                <option>$2,500–$5,000</option>
+                <option>$5,000+</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+
+            <div>
+              <button type="submit" class="btn-primary">Send Message</button>
+            </div>
+
+          </form>
+
+          <!-- Success state -->
+          <div x-show="sent" x-cloak class="success-card">
+            <div style="width:48px;height:48px;border-radius:50%;background:rgba(109,170,69,0.12);border:1px solid rgba(109,170,69,0.35);display:flex;align-items:center;justify-content:center;margin:0 auto 1.125rem;">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                <path d="M4 11.5l5 5 9-9" stroke="#6DAA45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 style="font-size:1.125rem;font-weight:700;color:var(--color-text);margin:0 0 0.5rem;">Message sent.</h3>
+            <p style="font-size:0.9375rem;color:var(--color-muted);margin:0;line-height:1.65;">I'll reply within 24 hours. If it's urgent, mention it and I'll prioritize.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (min-width: 700px) {
+    #f-budget-wrap { display: flex !important; }
+  }
+  @media (min-width: 1080px) {
+    #contact-grid  { flex-direction: row !important; align-items: flex-start !important; gap: 5rem !important; }
+    #contact-left  { flex-shrink: 0; width: auto !important; }
+    #contact-right { flex: 1; max-width: none !important; }
+  }
+</style>
+
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════ -->
+<footer style="background:var(--color-footer);border-top:1px solid var(--color-border);padding:2rem 0;">
+  <div class="container-shell">
+    <div id="footer-row" style="display:flex;flex-direction:column;align-items:center;gap:1.125rem;text-align:center;">
+
+      <p style="font-size:0.875rem;color:var(--color-muted);margin:0;">
+        <span style="font-weight:600;color:var(--color-text);">Adarsh Shankar</span>
+        <span style="color:var(--color-faint);margin:0 0.5rem;" aria-hidden="true">—</span>
+        B2B Email · Abu Dhabi
+      </p>
+
+      <nav aria-label="Footer navigation" style="display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem;">
+        <a href="#work"     style="font-size:0.8125rem;color:var(--color-faint);transition:color 180ms;" onmouseover="this.style.color='var(--color-muted)'" onmouseout="this.style.color='var(--color-faint)'">Work</a>
+        <a href="#packages" style="font-size:0.8125rem;color:var(--color-faint);transition:color 180ms;" onmouseover="this.style.color='var(--color-muted)'" onmouseout="this.style.color='var(--color-faint)'">Packages</a>
+        <a href="#proof"    style="font-size:0.8125rem;color:var(--color-faint);transition:color 180ms;" onmouseover="this.style.color='var(--color-muted)'" onmouseout="this.style.color='var(--color-faint)'">Proof</a>
+        <a href="#contact"  style="font-size:0.8125rem;color:var(--color-faint);transition:color 180ms;" onmouseover="this.style.color='var(--color-muted)'" onmouseout="this.style.color='var(--color-faint)'">Contact</a>
+      </nav>
+
+      <p style="font-size:0.75rem;color:var(--color-faint);margin:0;">© 2026 Adarsh Shankar</p>
+
+    </div>
+  </div>
+</footer>
+
+<style>
+  @media (min-width: 700px) {
+    #footer-row {
+      flex-direction: row !important;
+      justify-content: space-between !important;
+      text-align: left !important;
+    }
+  }
+</style>
+
+<!-- Asset placeholder init (images that fail to load) -->
+<script>
+  document.querySelectorAll('img[data-placeholder]').forEach(img => {
+    const ph = document.getElementById(img.dataset.placeholder);
+    if (!ph) return;
+    const show = () => { img.style.display = 'none'; ph.style.display = 'flex'; };
+    img.addEventListener('error', show);
+    if (img.complete && img.naturalWidth === 0) show();
+  });
+</script>
+
+</body>
+</html>
