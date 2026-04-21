@@ -8,147 +8,358 @@
       "file_type": "code",
       "source_file": "vite.config.js",
       "source_location": "L1",
-      "id": "vite_config",
-      "community": 3
+      "id": "vite_config_js",
+      "community": 11,
+      "norm_label": "vite.config.js"
+    },
+    {
+      "label": "index.js",
+      "file_type": "code",
+      "source_file": "server/index.js",
+      "source_location": "L1",
+      "id": "server_index_js",
+      "community": 12,
+      "norm_label": "index.js"
+    },
+    {
+      "label": "App.jsx",
+      "file_type": "code",
+      "source_file": "src/App.jsx",
+      "source_location": "L1",
+      "id": "src_app_jsx",
+      "community": 3,
+      "norm_label": "app.jsx"
+    },
+    {
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "src/App.jsx",
+      "source_location": "L11",
+      "id": "app_app",
+      "community": 3,
+      "norm_label": "app()"
     },
     {
       "label": "main.js",
       "file_type": "code",
-      "source_file": "src\\main.js",
+      "source_file": "src/main.js",
       "source_location": "L1",
-      "id": "main",
-      "community": 0
+      "id": "src_main_js",
+      "community": 0,
+      "norm_label": "main.js"
     },
     {
       "label": "getBreakpoint()",
       "file_type": "code",
-      "source_file": "src\\main.js",
+      "source_file": "src/main.js",
       "source_location": "L5",
       "id": "main_getbreakpoint",
-      "community": 2
+      "community": 0,
+      "norm_label": "getbreakpoint()"
     },
     {
       "label": "initVideo()",
       "file_type": "code",
-      "source_file": "src\\main.js",
+      "source_file": "src/main.js",
       "source_location": "L14",
       "id": "main_initvideo",
-      "community": 2
+      "community": 0,
+      "norm_label": "initvideo()"
     },
     {
       "label": "initMobileVideoPlay()",
       "file_type": "code",
-      "source_file": "src\\main.js",
+      "source_file": "src/main.js",
       "source_location": "L47",
       "id": "main_initmobilevideoplay",
-      "community": 0
+      "community": 0,
+      "norm_label": "initmobilevideoplay()"
     },
     {
       "label": "initReveal()",
       "file_type": "code",
-      "source_file": "src\\main.js",
+      "source_file": "src/main.js",
       "source_location": "L64",
       "id": "main_initreveal",
-      "community": 0
+      "community": 0,
+      "norm_label": "initreveal()"
     },
     {
       "label": "initScrollSpy()",
       "file_type": "code",
-      "source_file": "src\\main.js",
+      "source_file": "src/main.js",
       "source_location": "L87",
       "id": "main_initscrollspy",
-      "community": 0
+      "community": 0,
+      "norm_label": "initscrollspy()"
+    },
+    {
+      "label": "main.jsx",
+      "file_type": "code",
+      "source_file": "src/main.jsx",
+      "source_location": "L1",
+      "id": "src_main_jsx",
+      "community": 13,
+      "norm_label": "main.jsx"
+    },
+    {
+      "label": "Nav.jsx",
+      "file_type": "code",
+      "source_file": "src/components/Nav.jsx",
+      "source_location": "L1",
+      "id": "src_components_nav_jsx",
+      "community": 4,
+      "norm_label": "nav.jsx"
+    },
+    {
+      "label": "Nav()",
+      "file_type": "code",
+      "source_file": "src/components/Nav.jsx",
+      "source_location": "L3",
+      "id": "nav_nav",
+      "community": 4,
+      "norm_label": "nav()"
+    },
+    {
+      "label": "Packages.jsx",
+      "file_type": "code",
+      "source_file": "src/components/Packages.jsx",
+      "source_location": "L1",
+      "id": "src_components_packages_jsx",
+      "community": 5,
+      "norm_label": "packages.jsx"
+    },
+    {
+      "label": "Packages()",
+      "file_type": "code",
+      "source_file": "src/components/Packages.jsx",
+      "source_location": "L1",
+      "id": "packages_packages",
+      "community": 5,
+      "norm_label": "packages()"
+    },
+    {
+      "label": "Proof.jsx",
+      "file_type": "code",
+      "source_file": "src/components/Proof.jsx",
+      "source_location": "L1",
+      "id": "src_components_proof_jsx",
+      "community": 6,
+      "norm_label": "proof.jsx"
+    },
+    {
+      "label": "Proof()",
+      "file_type": "code",
+      "source_file": "src/components/Proof.jsx",
+      "source_location": "L3",
+      "id": "proof_proof",
+      "community": 6,
+      "norm_label": "proof()"
     },
     {
       "label": "placeholder.js",
       "file_type": "code",
-      "source_file": "src\\components\\placeholder.js",
+      "source_file": "src/components/placeholder.js",
       "source_location": "L1",
-      "id": "placeholder",
-      "community": 1
+      "id": "src_components_placeholder_js",
+      "community": 1,
+      "norm_label": "placeholder.js"
     },
     {
       "label": "initPlaceholders()",
       "file_type": "code",
-      "source_file": "src\\components\\placeholder.js",
+      "source_file": "src/components/placeholder.js",
       "source_location": "L1",
       "id": "placeholder_initplaceholders",
-      "community": 1
+      "community": 1,
+      "norm_label": "initplaceholders()"
     },
     {
       "label": "initVideoPoster()",
       "file_type": "code",
-      "source_file": "src\\components\\placeholder.js",
+      "source_file": "src/components/placeholder.js",
       "source_location": "L16",
       "id": "placeholder_initvideoposter",
-      "community": 1
+      "community": 1,
+      "norm_label": "initvideoposter()"
+    },
+    {
+      "label": "Testimonials.jsx",
+      "file_type": "code",
+      "source_file": "src/components/Testimonials.jsx",
+      "source_location": "L1",
+      "id": "src_components_testimonials_jsx",
+      "community": 7,
+      "norm_label": "testimonials.jsx"
+    },
+    {
+      "label": "Testimonials()",
+      "file_type": "code",
+      "source_file": "src/components/Testimonials.jsx",
+      "source_location": "L1",
+      "id": "testimonials_testimonials",
+      "community": 7,
+      "norm_label": "testimonials()"
+    },
+    {
+      "label": "Work.jsx",
+      "file_type": "code",
+      "source_file": "src/components/Work.jsx",
+      "source_location": "L1",
+      "id": "src_components_work_jsx",
+      "community": 2,
+      "norm_label": "work.jsx"
+    },
+    {
+      "label": "CaseStudy()",
+      "file_type": "code",
+      "source_file": "src/components/Work.jsx",
+      "source_location": "L3",
+      "id": "work_casestudy",
+      "community": 2,
+      "norm_label": "casestudy()"
+    },
+    {
+      "label": "Work()",
+      "file_type": "code",
+      "source_file": "src/components/Work.jsx",
+      "source_location": "L108",
+      "id": "work_work",
+      "community": 2,
+      "norm_label": "work()"
+    },
+    {
+      "label": "Hero.jsx",
+      "file_type": "code",
+      "source_file": "src/components/Hero.jsx",
+      "source_location": "L1",
+      "id": "src_components_hero_jsx",
+      "community": 8,
+      "norm_label": "hero.jsx"
+    },
+    {
+      "label": "Hero()",
+      "file_type": "code",
+      "source_file": "src/components/Hero.jsx",
+      "source_location": "L1",
+      "id": "hero_hero",
+      "community": 8,
+      "norm_label": "hero()"
+    },
+    {
+      "label": "Footer.jsx",
+      "file_type": "code",
+      "source_file": "src/components/Footer.jsx",
+      "source_location": "L1",
+      "id": "src_components_footer_jsx",
+      "community": 9,
+      "norm_label": "footer.jsx"
+    },
+    {
+      "label": "Footer()",
+      "file_type": "code",
+      "source_file": "src/components/Footer.jsx",
+      "source_location": "L1",
+      "id": "footer_footer",
+      "community": 9,
+      "norm_label": "footer()"
+    },
+    {
+      "label": "Contact.jsx",
+      "file_type": "code",
+      "source_file": "src/components/Contact.jsx",
+      "source_location": "L1",
+      "id": "src_components_contact_jsx",
+      "community": 10,
+      "norm_label": "contact.jsx"
+    },
+    {
+      "label": "Contact()",
+      "file_type": "code",
+      "source_file": "src/components/Contact.jsx",
+      "source_location": "L3",
+      "id": "contact_contact",
+      "community": 10,
+      "norm_label": "contact()"
     }
   ],
   "links": [
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src\\main.js",
+      "source_file": "src/App.jsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_src": "src_app_jsx",
+      "_tgt": "app_app",
+      "source": "src_app_jsx",
+      "target": "app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
       "source_location": "L5",
       "weight": 1.0,
-      "_src": "main",
+      "_src": "src_main_js",
       "_tgt": "main_getbreakpoint",
-      "source": "main",
+      "source": "src_main_js",
       "target": "main_getbreakpoint",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src\\main.js",
+      "source_file": "src/main.js",
       "source_location": "L14",
       "weight": 1.0,
-      "_src": "main",
+      "_src": "src_main_js",
       "_tgt": "main_initvideo",
-      "source": "main",
+      "source": "src_main_js",
       "target": "main_initvideo",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src\\main.js",
+      "source_file": "src/main.js",
       "source_location": "L47",
       "weight": 1.0,
-      "_src": "main",
+      "_src": "src_main_js",
       "_tgt": "main_initmobilevideoplay",
-      "source": "main",
+      "source": "src_main_js",
       "target": "main_initmobilevideoplay",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src\\main.js",
+      "source_file": "src/main.js",
       "source_location": "L64",
       "weight": 1.0,
-      "_src": "main",
+      "_src": "src_main_js",
       "_tgt": "main_initreveal",
-      "source": "main",
+      "source": "src_main_js",
       "target": "main_initreveal",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src\\main.js",
+      "source_file": "src/main.js",
       "source_location": "L87",
       "weight": 1.0,
-      "_src": "main",
+      "_src": "src_main_js",
       "_tgt": "main_initscrollspy",
-      "source": "main",
+      "source": "src_main_js",
       "target": "main_initscrollspy",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "src\\main.js",
+      "source_file": "src/main.js",
       "source_location": "L18",
       "weight": 1.0,
       "_src": "main_initvideo",
@@ -160,25 +371,133 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src\\components\\placeholder.js",
+      "source_file": "src/components/Nav.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_src": "src_components_nav_jsx",
+      "_tgt": "nav_nav",
+      "source": "src_components_nav_jsx",
+      "target": "nav_nav",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Packages.jsx",
       "source_location": "L1",
       "weight": 1.0,
-      "_src": "placeholder",
+      "_src": "src_components_packages_jsx",
+      "_tgt": "packages_packages",
+      "source": "src_components_packages_jsx",
+      "target": "packages_packages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Proof.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_src": "src_components_proof_jsx",
+      "_tgt": "proof_proof",
+      "source": "src_components_proof_jsx",
+      "target": "proof_proof",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/placeholder.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "src_components_placeholder_js",
       "_tgt": "placeholder_initplaceholders",
-      "source": "placeholder",
+      "source": "src_components_placeholder_js",
       "target": "placeholder_initplaceholders",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src\\components\\placeholder.js",
+      "source_file": "src/components/placeholder.js",
       "source_location": "L16",
       "weight": 1.0,
-      "_src": "placeholder",
+      "_src": "src_components_placeholder_js",
       "_tgt": "placeholder_initvideoposter",
-      "source": "placeholder",
+      "source": "src_components_placeholder_js",
       "target": "placeholder_initvideoposter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Testimonials.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "src_components_testimonials_jsx",
+      "_tgt": "testimonials_testimonials",
+      "source": "src_components_testimonials_jsx",
+      "target": "testimonials_testimonials",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Work.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_src": "src_components_work_jsx",
+      "_tgt": "work_casestudy",
+      "source": "src_components_work_jsx",
+      "target": "work_casestudy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Work.jsx",
+      "source_location": "L108",
+      "weight": 1.0,
+      "_src": "src_components_work_jsx",
+      "_tgt": "work_work",
+      "source": "src_components_work_jsx",
+      "target": "work_work",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Hero.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "src_components_hero_jsx",
+      "_tgt": "hero_hero",
+      "source": "src_components_hero_jsx",
+      "target": "hero_hero",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Footer.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "src_components_footer_jsx",
+      "_tgt": "footer_footer",
+      "source": "src_components_footer_jsx",
+      "target": "footer_footer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Contact.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_src": "src_components_contact_jsx",
+      "_tgt": "contact_contact",
+      "source": "src_components_contact_jsx",
+      "target": "contact_contact",
       "confidence_score": 1.0
     }
   ],
