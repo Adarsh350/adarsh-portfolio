@@ -15,24 +15,14 @@ function initVideo() {
   const video = document.getElementById('dashboard-video')
   if (!video) return
 
-  const bp = getBreakpoint()
-  currentBucket = bp
+  currentBucket = getBreakpoint()
 
-  if (bp === 'phone') {
-    // No autoplay on mobile — overlay handles play
-    video.removeAttribute('autoplay')
-    video.pause()
-  } else {
-    const src = bp === 'lap'
-      ? '/assets/video/dashboard-desktop.mp4'
-      : '/assets/video/dashboard-tablet.mp4'
-    video.src = src
-    video.muted = true
-    video.loop = true
-    video.setAttribute('playsinline', '')
-    video.load()
-    video.play().catch(() => {/* autoplay blocked gracefully */})
-  }
+  video.src = '/assets/video/dashboard.mp4'
+  video.muted = true
+  video.loop = true
+  video.setAttribute('playsinline', '')
+  video.load()
+  video.play().catch(() => {/* autoplay blocked gracefully */})
 }
 
 window.addEventListener('resize', () => {
@@ -43,22 +33,6 @@ window.addEventListener('resize', () => {
   }
 }, { passive: true })
 
-// ─── Mobile video play overlay ────────────────────────────────────────────────
-function initMobileVideoPlay() {
-  const overlay = document.getElementById('video-play-overlay')
-  const video = document.getElementById('dashboard-video')
-  if (!overlay || !video) return
-
-  overlay.addEventListener('click', () => {
-    video.src = '/assets/video/dashboard-tablet.mp4'
-    video.muted = true
-    video.setAttribute('playsinline', '')
-    video.load()
-    video.play().then(() => {
-      overlay.style.display = 'none'
-    }).catch(() => {/* video missing — overlay stays */})
-  })
-}
 
 // ─── Reveal on scroll ─────────────────────────────────────────────────────────
 function initReveal() {
@@ -120,7 +94,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initPlaceholders()
   initVideoPoster()
   initVideo()
-  initMobileVideoPlay()
   initReveal()
   initScrollSpy()
 })
