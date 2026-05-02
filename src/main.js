@@ -2,9 +2,32 @@ import './style.css'
 import { initPlaceholders, initVideoPoster } from './components/placeholder.js'
 import { inject } from '@vercel/analytics'
 import { injectSpeedInsights } from '@vercel/speed-insights'
+import gsap from 'gsap'
 
 inject()
 injectSpeedInsights()
+
+// ─── Hero entrance (GSAP stagger) ─────────────────────────────────────────────
+function initHeroEntrance() {
+  const content = document.getElementById('hero-content')
+  const visual  = document.getElementById('hero-visual')
+  if (content) {
+    content.classList.add('visible') // bypass CSS reveal — GSAP owns this
+    gsap.from(content.children, {
+      y: 28, opacity: 0, duration: 0.85,
+      stagger: 0.11, ease: 'power3.out', delay: 0.1,
+      clearProps: 'all'
+    })
+  }
+  if (visual) {
+    visual.classList.add('visible')
+    gsap.from(visual, {
+      x: 40, opacity: 0, duration: 1,
+      ease: 'power3.out', delay: 0.45,
+      clearProps: 'all'
+    })
+  }
+}
 
 // ─── Video source switching ───────────────────────────────────────────────────
 function getBreakpoint() {
@@ -96,6 +119,7 @@ document.addEventListener('click', e => {
 
 // ─── Init ─────────────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
+  initHeroEntrance()
   initPlaceholders()
   initVideoPoster()
   initVideo()
