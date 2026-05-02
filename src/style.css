@@ -102,8 +102,9 @@ textarea {
 }
 
 .container-shell {
-  width: min(1100px, calc(100% - 2rem));
+  max-width: 1200px;
   margin-inline: auto;
+  padding-inline: clamp(1.5rem, 5vw, 4rem);
 }
 
 /* Hero visual animations */
