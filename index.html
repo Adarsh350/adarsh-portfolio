@@ -11,7 +11,7 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='28' font-family='system-ui,sans-serif' font-weight='700' fill='%23E07A58'>A</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
   <script type="module" src="/src/main.js"></script>
 </head>
@@ -96,7 +96,13 @@
     <div id="hero-grid" style="display:flex;flex-direction:column;gap:3rem;align-items:flex-start;">
 
       <!-- Left: content -->
-      <div id="hero-content" class="reveal" style="display:flex;flex-direction:column;gap:1.5rem;max-width:680px;">
+      <div class="reveal" style="display:flex;flex-direction:column;gap:1.375rem;max-width:640px;">
+
+        <!-- Badge -->
+        <div style="display:inline-flex;align-items:center;gap:0.5rem;background:var(--color-surface-raised);border:1px solid var(--color-border);border-radius:var(--radius-pill);padding:0.4rem 0.875rem;width:fit-content;">
+          <span style="width:6px;height:6px;border-radius:50%;background:var(--color-accent);flex-shrink:0;" aria-hidden="true"></span>
+          <span style="font-size:0.6875rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-accent);">B2B Email Campaign Specialist</span>
+        </div>
 
         <!-- H1 -->
         <h1 style="font-size:var(--text-hero);font-weight:800;line-height:1.04;letter-spacing:-0.03em;color:var(--color-text);margin:0;">
@@ -130,6 +136,14 @@
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
           <a href="#contact" class="btn-ghost">Let's Talk</a>
+        </div>
+
+        <!-- Tool badges -->
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;padding-top:0.125rem;">
+          <span class="tag">Mailchimp</span>
+          <span class="tag">Analytics</span>
+          <span class="tag">Landing Pages</span>
+          <span class="tag">Reports</span>
         </div>
 
       </div>
