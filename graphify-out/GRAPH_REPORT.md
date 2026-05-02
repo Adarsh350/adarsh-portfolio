@@ -1,7 +1,7 @@
 # Graph Report - Adarsh-portfolio  (2026-05-02)
 
 ## Corpus Check
-- 14 files · ~13,190 words
+- 14 files · ~13,255 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -26,7 +26,7 @@ Cohesion: 0.4
 Nodes (2): getBreakpoint(), initVideo()
 
 ## Knowledge Gaps
-- **Thin community `Community 0`** (6 nodes): `getBreakpoint()`, `initMobileVideoPlay()`, `initReveal()`, `initScrollSpy()`, `initVideo()`, `main.js`
+- **Thin community `Community 0`** (6 nodes): `getBreakpoint()`, `initHeroEntrance()`, `initReveal()`, `initScrollSpy()`, `initVideo()`, `main.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 
 ## Suggested Questions
