@@ -1,8 +1,10 @@
 import './style.css'
 import { initPlaceholders, initVideoPoster } from './components/placeholder.js'
 import { inject } from '@vercel/analytics'
+import { injectSpeedInsights } from '@vercel/speed-insights'
 
 inject()
+injectSpeedInsights()
 
 // ─── Video source switching ───────────────────────────────────────────────────
 function getBreakpoint() {
