@@ -580,7 +580,7 @@
             preload="none" muted loop playsinline
             poster="/assets/video/dashboard-poster.jpg"
             aria-label="Campaign analytics dashboard demo — email opens, landing page visits, and lead conversions"
-            style="width:100%;height:100%;object-fit:cover;display:block;">
+            style="width:100%;height:100%;object-fit:contain;display:block;">
           </video>
 
           <!-- Poster placeholder if video/poster absent -->
@@ -595,10 +595,9 @@
             <span style="font-size:0.8125rem;">Dashboard Preview Coming Soon</span>
           </div>
 
-          <!-- Mobile play overlay (removed on tab+) -->
-          <div id="video-play-overlay" class="video-overlay"
-            role="button" tabindex="0" aria-label="Tap to play dashboard demo"
-            onkeydown="if(event.key==='Enter'||event.key===' ')this.click()">
+          <!-- Mobile play overlay (disabled — video autoplays on all breakpoints) -->
+          <div id="video-play-overlay" class="video-overlay" style="display:none;"
+            role="button" tabindex="-1" aria-hidden="true">
             <div class="play-btn" aria-hidden="true">
               <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M7 4l12 7-12 7V4z" fill="white"/></svg>
             </div>
