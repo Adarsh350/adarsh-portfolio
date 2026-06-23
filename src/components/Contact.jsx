@@ -42,9 +42,9 @@ export default function Contact() {
           <div id="contact-left" style={{width:'100%'}}>
             <div style={{marginBottom:'1.5rem'}}>
               <picture>
-                <source media="(min-width:1080px)" srcSet="/assets/headshot/headshot-desktop.jpg" />
-                <source media="(min-width:700px)"  srcSet="/assets/headshot/headshot-tablet.jpg" />
-                <img src="/assets/headshot/headshot-mobile.jpg"
+                <source media="(min-width:1080px)" srcSet="/assets/headshot/adarsh-shankar.png" />
+                <source media="(min-width:700px)"  srcSet="/assets/headshot/adarsh-shankar.png" />
+                <img src="/assets/headshot/adarsh-shankar.png"
                   alt="Adarsh Shankar — B2B Email Campaign Specialist, Abu Dhabi"
                   width="240" height="320" loading="lazy"
                   data-placeholder="headshot-ph"
