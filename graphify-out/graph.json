@@ -60,7 +60,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "package_scripts",
-      "community": 4,
+      "community": 2,
       "norm_label": "scripts"
     },
     {
@@ -70,7 +70,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "package_scripts_dev",
-      "community": 4,
+      "community": 2,
       "norm_label": "dev"
     },
     {
@@ -80,7 +80,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "package_scripts_build",
-      "community": 4,
+      "community": 2,
       "norm_label": "build"
     },
     {
@@ -90,7 +90,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "package_scripts_preview",
-      "community": 4,
+      "community": 2,
       "norm_label": "preview"
     },
     {
@@ -100,7 +100,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "package_devdependencies",
-      "community": 2,
+      "community": 4,
       "norm_label": "devdependencies"
     },
     {
@@ -110,7 +110,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "package_devdependencies_tailwindcss_vite",
-      "community": 2,
+      "community": 4,
       "norm_label": "@tailwindcss/vite"
     },
     {
@@ -120,7 +120,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "package_devdependencies_tailwindcss",
-      "community": 2,
+      "community": 4,
       "norm_label": "tailwindcss"
     },
     {
@@ -130,7 +130,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "package_devdependencies_typescript",
-      "community": 2,
+      "community": 4,
       "norm_label": "typescript"
     },
     {
@@ -140,7 +140,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "package_devdependencies_vite",
-      "community": 2,
+      "community": 4,
       "norm_label": "vite"
     },
     {
@@ -400,7 +400,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_placeholder",
-      "community": 1,
+      "community": 0,
       "norm_label": "placeholder.js"
     },
     {
@@ -410,7 +410,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_placeholder_initplaceholders",
-      "community": 1,
+      "community": 0,
       "norm_label": "initplaceholders()"
     },
     {
@@ -420,7 +420,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "components_placeholder_initvideoposter",
-      "community": 1,
+      "community": 0,
       "norm_label": "initvideoposter()"
     },
     {
@@ -430,7 +430,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "data_casestudies",
-      "community": 1,
+      "community": 0,
       "norm_label": "casestudies.js"
     },
     {
@@ -440,7 +440,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "data_casestudies_casestudies",
-      "community": 1,
+      "community": 0,
       "norm_label": "casestudies"
     },
     {
@@ -450,7 +450,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_main_js_src_main",
-      "community": 1,
+      "community": 0,
       "norm_label": "main.js"
     },
     {
@@ -460,7 +460,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "src_main_getbreakpoint",
-      "community": 1,
+      "community": 0,
       "norm_label": "getbreakpoint()"
     },
     {
@@ -470,7 +470,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "src_main_initvideo",
-      "community": 1,
+      "community": 0,
       "norm_label": "initvideo()"
     },
     {
@@ -480,7 +480,7 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "src_main_escapehtml",
-      "community": 1,
+      "community": 0,
       "norm_label": "escapehtml()"
     },
     {
@@ -490,7 +490,7 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "src_main_renderlist",
-      "community": 1,
+      "community": 0,
       "norm_label": "renderlist()"
     },
     {
@@ -500,7 +500,7 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "src_main_renderstats",
-      "community": 1,
+      "community": 0,
       "norm_label": "renderstats()"
     },
     {
@@ -510,7 +510,7 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "src_main_rendergallery",
-      "community": 1,
+      "community": 0,
       "norm_label": "rendergallery()"
     },
     {
@@ -520,7 +520,7 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "src_main_rendercasestudy",
-      "community": 1,
+      "community": 0,
       "norm_label": "rendercasestudy()"
     },
     {
@@ -530,7 +530,7 @@
       "source_location": "L245",
       "_origin": "ast",
       "id": "src_main_initwork",
-      "community": 1,
+      "community": 0,
       "norm_label": "initwork()"
     },
     {
@@ -540,7 +540,7 @@
       "source_location": "L344",
       "_origin": "ast",
       "id": "src_main_initreveal",
-      "community": 1,
+      "community": 0,
       "norm_label": "initreveal()"
     },
     {
@@ -550,8 +550,18 @@
       "source_location": "L372",
       "_origin": "ast",
       "id": "src_main_initscrollspy",
-      "community": 1,
+      "community": 0,
       "norm_label": "initscrollspy()"
+    },
+    {
+      "label": "initNavState()",
+      "file_type": "code",
+      "source_file": "src/main.js",
+      "source_location": "L393",
+      "_origin": "ast",
+      "id": "src_main_initnavstate",
+      "community": 0,
+      "norm_label": "initnavstate()"
     },
     {
       "label": "main.jsx",
@@ -570,7 +580,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tsconfig",
-      "community": 0,
+      "community": 1,
       "norm_label": "tsconfig.json"
     },
     {
@@ -580,7 +590,7 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "tsconfig_compileroptions",
-      "community": 0,
+      "community": 1,
       "norm_label": "compileroptions"
     },
     {
@@ -590,7 +600,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "tsconfig_compileroptions_target",
-      "community": 0,
+      "community": 1,
       "norm_label": "target"
     },
     {
@@ -600,7 +610,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "tsconfig_compileroptions_module",
-      "community": 0,
+      "community": 1,
       "norm_label": "module"
     },
     {
@@ -610,7 +620,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "tsconfig_compileroptions_lib",
-      "community": 0,
+      "community": 1,
       "norm_label": "lib"
     },
     {
@@ -620,7 +630,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "tsconfig_compileroptions_types",
-      "community": 0,
+      "community": 1,
       "norm_label": "types"
     },
     {
@@ -630,7 +640,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "tsconfig_compileroptions_skiplibcheck",
-      "community": 0,
+      "community": 1,
       "norm_label": "skiplibcheck"
     },
     {
@@ -640,7 +650,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "tsconfig_compileroptions_moduleresolution",
-      "community": 0,
+      "community": 1,
       "norm_label": "moduleresolution"
     },
     {
@@ -650,7 +660,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "tsconfig_compileroptions_allowimportingtsextensions",
-      "community": 0,
+      "community": 1,
       "norm_label": "allowimportingtsextensions"
     },
     {
@@ -660,7 +670,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "tsconfig_compileroptions_verbatimmodulesyntax",
-      "community": 0,
+      "community": 1,
       "norm_label": "verbatimmodulesyntax"
     },
     {
@@ -670,7 +680,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "tsconfig_compileroptions_moduledetection",
-      "community": 0,
+      "community": 1,
       "norm_label": "moduledetection"
     },
     {
@@ -680,7 +690,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "tsconfig_compileroptions_noemit",
-      "community": 0,
+      "community": 1,
       "norm_label": "noemit"
     },
     {
@@ -690,7 +700,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "tsconfig_compileroptions_nounusedlocals",
-      "community": 0,
+      "community": 1,
       "norm_label": "nounusedlocals"
     },
     {
@@ -700,7 +710,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "tsconfig_compileroptions_nounusedparameters",
-      "community": 0,
+      "community": 1,
       "norm_label": "nounusedparameters"
     },
     {
@@ -710,7 +720,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "tsconfig_compileroptions_erasablesyntaxonly",
-      "community": 0,
+      "community": 1,
       "norm_label": "erasablesyntaxonly"
     },
     {
@@ -720,7 +730,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "tsconfig_compileroptions_nofallthroughcasesinswitch",
-      "community": 0,
+      "community": 1,
       "norm_label": "nofallthroughcasesinswitch"
     },
     {
@@ -730,7 +740,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "tsconfig_include",
-      "community": 0,
+      "community": 1,
       "norm_label": "include"
     },
     {
@@ -1332,6 +1342,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/main.js",
+      "source_location": "L393",
+      "weight": 1.0,
+      "source": "src_main_js_src_main",
+      "target": "src_main_initnavstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.js",
       "source_location": "L344",
       "weight": 1.0,
       "source": "src_main_js_src_main",
@@ -1636,5 +1656,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "bd8f9213e6d48c53022e3a9c8a85c751aed27428"
+  "built_at_commit": "8853a12370fc1118d625b20cfdca9c3af295ad66"
 }

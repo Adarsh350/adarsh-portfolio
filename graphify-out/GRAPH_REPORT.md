@@ -1,11 +1,11 @@
-# Graph Report - .  (2026-06-23)
+# Graph Report - .  (2026-06-24)
 
 ## Corpus Check
-- 39 files · ~572,319 words
+- 40 files · ~642,481 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 74 nodes · 86 edges · 13 communities (6 shown, 7 thin omitted)
+- 75 nodes · 87 edges · 13 communities (6 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
@@ -44,24 +44,24 @@
 ## Communities (13 total, 7 thin omitted)
 
 ### Community 0 - "Community 0"
+Cohesion: 0.18
+Nodes (10): initPlaceholders(), initVideoPoster(), caseStudies, escapeHtml(), getBreakpoint(), initVideo(), renderCaseStudy(), renderGallery() (+2 more)
+
+### Community 1 - "Community 1"
 Cohesion: 0.12
 Nodes (16): compilerOptions, allowImportingTsExtensions, erasableSyntaxOnly, lib, module, moduleDetection, moduleResolution, noEmit (+8 more)
 
-### Community 1 - "Community 1"
-Cohesion: 0.20
-Nodes (10): initPlaceholders(), initVideoPoster(), caseStudies, escapeHtml(), getBreakpoint(), initVideo(), renderCaseStudy(), renderGallery() (+2 more)
-
 ### Community 2 - "Community 2"
-Cohesion: 0.14
-Nodes (13): dependencies, alpinejs, @vercel/analytics, @vercel/speed-insights, devDependencies, tailwindcss, @tailwindcss/vite, typescript (+5 more)
+Cohesion: 0.15
+Nodes (12): dependencies, alpinejs, @vercel/analytics, @vercel/speed-insights, name, private, scripts, build (+4 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.43
 Nodes (3): Contact(), Footer(), Hero()
 
 ### Community 4 - "Community 4"
-Cohesion: 0.50
-Nodes (4): scripts, build, dev, preview
+Cohesion: 0.40
+Nodes (5): devDependencies, tailwindcss, @tailwindcss/vite, typescript, vite
 
 ## Knowledge Gaps
 - **30 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+25 more)
@@ -71,11 +71,9 @@ Nodes (4): scripts, build, dev, preview
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `scripts` connect `Community 4` to `Community 2`?**
-  _High betweenness centrality (0.017) - this node is a cross-community bridge._
+- **Why does `devDependencies` connect `Community 4` to `Community 2`?**
+  _High betweenness centrality (0.021) - this node is a cross-community bridge._
 - **What connects `name`, `private`, `version` to the rest of the system?**
   _30 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Community 0` be split into smaller, more focused modules?**
+- **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
-- **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected._
