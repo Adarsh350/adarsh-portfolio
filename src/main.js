@@ -389,6 +389,19 @@ function initScrollSpy() {
   sections.forEach(s => observer.observe(s))
 }
 
+// ─── Nav scroll state ────────────────────────────────────────────────────────
+function initNavState() {
+  const nav = document.getElementById('main-nav')
+  if (!nav) return
+
+  const sync = () => {
+    nav.classList.toggle('is-scrolled', window.scrollY > 16)
+  }
+
+  sync()
+  window.addEventListener('scroll', sync, { passive: true })
+}
+
 // ─── Smooth anchor (supplement CSS scroll-padding-top) ───────────────────────
 document.addEventListener('click', e => {
   const anchor = e.target.closest('a[href^="#"]')
@@ -408,5 +421,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initVideoPoster()
   initVideo()
   initReveal()
+  initNavState()
   initScrollSpy()
 })
