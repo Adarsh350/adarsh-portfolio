@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+[data-device="mobile"] {
+  --bg: #ffffff;
+  --fg: #14161a;
+  --muted: #5b6270;
+  --border: #e4e6eb;
+  --surface: #f7f7f9;
+  --accent: #2b3a67;
+
+  background: var(--bg);
+  color: var(--fg);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+[data-device="mobile"] section {
+  scroll-margin-top: 1rem;
+}
+
+/* Bottom tab bar sits below the safe area on notched devices */
+[data-device="mobile"] .mobile-tabbar {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Horizontal snap carousel for project cards */
+[data-device="mobile"] .snap-row {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+[data-device="mobile"] .snap-row::-webkit-scrollbar {
+  display: none;
+}
+
+[data-device="mobile"] .snap-card {
+  scroll-snap-align: center;
+}
+
+/* Native <details> — replace default marker with a rotating chevron */
+[data-device="mobile"] details > summary {
+  list-style: none;
+}
+
+[data-device="mobile"] details > summary::-webkit-details-marker {
+  display: none;
+}
+
+[data-device="mobile"] details > summary .chevron {
+  transition: transform 0.15s ease;
+}
+
+[data-device="mobile"] details[open] > summary .chevron {
+  transform: rotate(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-device="mobile"] * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+/* Desktop-tree-only rules. Tailwind utility classes handle almost
+   everything below; this file only holds what utilities can't express. */
+
+[data-device="desktop"] {
+  --d-accent: #4f46e5; /* indigo-600 */
+}
+
+[data-device="desktop"] .d-container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 2.5rem;
+}
+
+/* Project card hover-reveal: overlay slides up from the bottom on hover
+   instead of appearing/disappearing, which reads calmer with a mouse. */
+[data-device="desktop"] .d-card-overlay {
+  transform: translateY(100%);
+  transition: transform 220ms ease;
+}
+
+[data-device="desktop"] .d-card:hover .d-card-overlay,
+[data-device="desktop"] .d-card:focus-within .d-card-overlay {
+  transform: translateY(0%);
+}
+
+[data-device="desktop"] .d-card-image {
+  transition: transform 400ms ease;
+}
+
+[data-device="desktop"] .d-card:hover .d-card-image {
+  transform: scale(1.04);
+}
