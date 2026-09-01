@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+/* Desktop-tree-only rules. Tailwind utility classes handle almost
+   everything below; this file only holds what utilities can't express. */
+
+[data-device="desktop"] {
+  /* Colour */
+  --d-ink: #0c0f16;
+  --d-ink-2: #3d4453;
+  --d-ink-3: #6b7280;
+  --d-surface: #ffffff;
+  --d-surface-2: #f6f7f9;
+  --d-surface-ink: #0c0f16;
+  --d-border: #e4e6eb;
+  --d-border-strong: #c9cdd6;
+  --d-accent: #2b3a67;
+  --d-accent-bright: #4f46e5;
+  --d-accent-soft: #eef0f7;
+  --d-metric: #b25b2e;
+
+  /* Fluid type scale */
+  --d-step--1: clamp(0.8125rem, 0.78rem + 0.16vw, 0.875rem);
+  --d-step-0: clamp(0.9375rem, 0.9rem + 0.19vw, 1rem);
+  --d-step-1: clamp(1.0625rem, 1rem + 0.31vw, 1.25rem);
+  --d-step-2: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+  --d-step-3: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+  --d-step-4: clamp(1.875rem, 1.6rem + 1.4vw, 2.5rem);
+  --d-step-5: clamp(2.375rem, 1.9rem + 2.4vw, 3.25rem);
+  --d-step-6: clamp(3rem, 2.1rem + 4.2vw, 5.25rem);
+
+  /* Spacing scale */
+  --d-space-1: 0.25rem;
+  --d-space-2: 0.5rem;
+  --d-space-3: 0.75rem;
+  --d-space-4: 1rem;
+  --d-space-5: 1.5rem;
+  --d-space-6: 2rem;
+  --d-space-7: 3rem;
+  --d-space-8: 4.5rem;
+  --d-space-9: 8rem;
+  --d-section-y: clamp(5rem, 3rem + 6vw, 9rem);
+  --d-gutter: clamp(1.5rem, 1rem + 2.5vw, 4rem);
+
+  /* Radius */
+  --d-r-sm: 6px;
+  --d-r-md: 12px;
+  --d-r-lg: 20px;
+  --d-r-full: 999px;
+
+  /* Shadow — layered, low-alpha, tinted with the navy accent */
+  --d-shadow-1: 0 1px 2px rgba(43, 58, 103, 0.06);
+  --d-shadow-2:
+    0 2px 6px rgba(43, 58, 103, 0.08), 0 8px 24px rgba(43, 58, 103, 0.06);
+  --d-shadow-3:
+    0 4px 12px rgba(43, 58, 103, 0.1), 0 24px 48px rgba(43, 58, 103, 0.12);
+
+  /* Motion */
+  --d-dur-fast: 140ms;
+  --d-dur: 260ms;
+  --d-dur-slow: 520ms;
+  --d-ease: cubic-bezier(0.2, 0.7, 0.3, 1);
+  --d-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Container */
+  --d-measure: clamp(64rem, 88vw, 82rem);
+}
+
+[data-device="desktop"] .d-container {
+  width: min(100% - 2 * var(--d-gutter), var(--d-measure));
+  margin-inline: auto;
+}
+
+/* Section divider: a hairline with a centred diamond node. Flat geometry —
+   no path data worth hand-authoring as SVG. */
+[data-device="desktop"] .d-rule {
+  position: relative;
+  border: none;
+  border-top: 1px solid var(--d-border);
+  margin: 0;
+}
+
+[data-device="desktop"] .d-rule::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 6px;
+  height: 6px;
+  background: var(--d-accent);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Highlights bullet: replaces list-disc with a diamond marker. */
+[data-device="desktop"] .d-node {
+  position: relative;
+  list-style: none;
+  padding-left: var(--d-space-5);
+}
+
+[data-device="desktop"] .d-node::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 0.65em;
+  width: 6px;
+  height: 6px;
+  background: var(--d-accent);
+  transform: rotate(45deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-device="desktop"] * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
