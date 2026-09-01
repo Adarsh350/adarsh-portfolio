@@ -1,4 +1,5 @@
 import { skills } from "@/content/skills";
+import { skillIcons } from "./icons";
 
 export default function Skills() {
   return (
@@ -8,9 +9,17 @@ export default function Skills() {
       </h2>
 
       <div className="flex flex-col gap-6">
-        {skills.map((group) => (
+        {skills.map((group) => {
+          const Icon = skillIcons[group.id];
+          return (
           <div key={group.category}>
-            <h3 className="mb-2 text-sm font-semibold">{group.category}</h3>
+            <h3 className="mb-2 flex items-center gap-2 text-sm font-semibold">
+              <Icon size={16} />
+              {group.category}
+            </h3>
+            {group.note && (
+              <p className="mb-2 text-xs text-[var(--muted)]">{group.note}</p>
+            )}
             <ul className="flex flex-wrap gap-2">
               {group.items.map((item) => (
                 <li
@@ -22,7 +31,8 @@ export default function Skills() {
               ))}
             </ul>
           </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );
