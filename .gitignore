@@ -13,6 +13,7 @@ node_modules
 # Next.js
 .next/
 next-env.d.ts
+*.tsbuildinfo
 
 # graphify cache
 graphify-out/cache/
