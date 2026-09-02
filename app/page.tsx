@@ -37,7 +37,6 @@ export default function Home() {
           <div className="hero-visual">
             <div className="portrait-frame">
               <Image src="/assets/headshot/adarsh-shankar.png" alt="Adarsh Shankar" width={1086} height={1448} priority sizes="(max-width: 760px) 46vw, 30vw" />
-              <span className="portrait-code">AS / 026</span>
             </div>
             <div className="availability-card">
               <div><span>Current base</span><strong>{profile.location}</strong></div>
