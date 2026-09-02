@@ -33,3 +33,5 @@ graphify-out/cache/
 CLAUDE.md
 AGENTS.md
 graphify-out/
+.vercel
+.env*

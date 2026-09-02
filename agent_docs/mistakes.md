@@ -33,3 +33,9 @@
 - **Symptom:** The first implementation hid navigation and project proof on mobile, placed availability after the primary actions, and omitted secondary contact links and explicit new-tab labels.
 - **Fix:** Added a two-row mobile navigation, pre-action mobile status, persistent project proof, complete contact links, screen-reader new-tab labels, expandable certifications, deployment-derived metadata, and restored metric qualifiers.
 - **Prevention:** Translate content, accessibility, and breakpoint requirements into rendered assertions before the final review, not only visual inspection.
+
+## 2026-09-02 — Keep Vercel's framework preset aligned with the app
+
+- **Symptom:** The Git production build ran Next.js successfully, then failed because the Vercel project still expected Vite's `dist` output directory.
+- **Fix:** Set the project framework to Next.js and add a tracked `vercel.json` framework override.
+- **Prevention:** Before releasing a framework migration, inspect the hosting project's detected framework and output-directory expectations.
