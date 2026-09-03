@@ -61,7 +61,7 @@ export const caseStudies: CaseStudy[] = [
     work: [
       "Led a four-person email team across more than 10 B2B and B2C clients.",
       "Built dual-purpose landing pages with custom-coded trackers and Zapier-automated lead pipelines.",
-      "Built a live client dashboard plus automated bounce and campaign reporting on Cloudflare Workers.",
+      "Built a live client dashboard plus automated bounce and campaign reporting on Cloudflare Workers, independently using Google Anti-Gravity.",
     ],
     tools: ["Lovable", "Zapier", "Cloudflare Workers", "Email lifecycle"],
     diagram: "lifecycle",
