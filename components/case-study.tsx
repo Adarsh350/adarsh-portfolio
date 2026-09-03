@@ -1,6 +1,7 @@
 import type { CaseStudy as CaseStudyType } from "@/content/experience";
 import { ArrowUpRight } from "./icons";
 import { SystemDiagram } from "./system-diagram";
+import { TrussmeEvidence } from "./trussme-evidence";
 
 export function CaseStudy({ study }: { study: CaseStudyType }) {
   return (
@@ -20,6 +21,7 @@ export function CaseStudy({ study }: { study: CaseStudyType }) {
         <div className="metric-band">
           {study.metrics.map((metric) => <div key={metric.label}><strong>{metric.value}</strong><span>{metric.label}</span></div>)}
         </div>
+        {study.id === "trussme" ? <TrussmeEvidence /> : null}
         <div className="case-detail-grid">
           <div className="case-work"><p className="micro-label">What I did</p><ol>{study.work.map((item) => <li key={item}>{item}</li>)}</ol></div>
           <SystemDiagram type={study.diagram} />
