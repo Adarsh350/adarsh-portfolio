@@ -40,10 +40,7 @@ export function TrussmeEvidence() {
           <p className="micro-label">Interface evidence</p>
           <h4 id="trussme-evidence-title">A reporting layer built for the work behind the campaigns.</h4>
         </div>
-        <div className="evidence-heading-side">
-          <p className="evidence-caption">Use the arrows to inspect the dashboard one screen at a time.</p>
-          <p className="evidence-build-note"><span>Built independently</span>Google Anti-Gravity</p>
-        </div>
+        <p className="evidence-caption">Use the arrows to inspect the dashboard one screen at a time.</p>
       </div>
       <div className="evidence-carousel" aria-roledescription="carousel" aria-label="Trussme dashboard screens">
         <button className="evidence-arrow evidence-arrow-left" type="button" onClick={() => move(-1)} aria-label="Previous dashboard screen">←</button>
