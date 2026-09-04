@@ -39,3 +39,9 @@
 - **Symptom:** The Git production build ran Next.js successfully, then failed because the Vercel project still expected Vite's `dist` output directory.
 - **Fix:** Set the project framework to Next.js and add a tracked `vercel.json` framework override.
 - **Prevention:** Before releasing a framework migration, inspect the hosting project's detected framework and output-directory expectations.
+
+## 2026-09-04 - Base production syncs on the remote branch
+
+- **Symptom:** The local `master` had diverged from `origin/master`, and the post-checkout graph hook generated untracked artifacts that blocked branch switching.
+- **Fix:** Preserved the generated files, based a temporary release branch directly on `origin/master`, cherry-picked the focused change, and pushed that release commit to production.
+- **Prevention:** Fetch and inspect `origin/master` before production merges; treat `.next`, `.vercel`, and `graphify-out` as generated verification output.
