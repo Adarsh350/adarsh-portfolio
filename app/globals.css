@@ -107,6 +107,11 @@ main, footer { max-width: 1920px; margin-inline: auto; }
 .metric-band > div:last-child { border-right: 0; }
 .metric-band strong { font: 500 clamp(32px, 3.2vw, 56px)/1 var(--font-mono); letter-spacing: -.07em; }
 .metric-band span { max-width: 200px; color: var(--muted); font-size: 12px; line-height: 1.25; }
+.trussme-breakdown { margin-top: 42px; display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--rule-dark); border-bottom: 1px solid var(--rule-dark); }
+.trussme-breakdown > div { min-height: 148px; padding: 18px 24px 20px 0; border-right: 1px solid var(--rule); }
+.trussme-breakdown > div:not(:first-child) { padding-left: 24px; }
+.trussme-breakdown > div:last-child { border-right: 0; }
+.trussme-breakdown p:last-child { max-width: 290px; margin: 26px 0 0; color: var(--muted); font-size: 14px; line-height: 1.45; }
 .trussme-evidence { margin-top: 72px; padding-top: 22px; border-top: 1px solid var(--ink); }
 .evidence-heading { display: flex; justify-content: space-between; gap: 40px; align-items: end; }
 .evidence-heading h4 { max-width: 540px; margin: 18px 0 0; font-size: clamp(24px, 2.3vw, 38px); line-height: 1.02; font-weight: 520; letter-spacing: -.04em; }
@@ -278,6 +283,10 @@ footer span { justify-self: end; color: #bac3bd; }
   .metric-band > div, .metric-band > div:not(:first-child) { min-height: 96px; padding: 16px 0; grid-template-columns: 1fr 1fr; align-items: center; border-right: 0; border-bottom: 1px solid var(--rule); }
   .metric-band > div:last-child { border-bottom: 0; }
   .metric-band span { justify-self: end; text-align: right; }
+  .trussme-breakdown { grid-template-columns: 1fr; }
+  .trussme-breakdown > div, .trussme-breakdown > div:not(:first-child) { min-height: 0; padding: 18px 0; border-right: 0; border-bottom: 1px solid var(--rule); }
+  .trussme-breakdown > div:last-child { border-bottom: 0; }
+  .trussme-breakdown p:last-child { margin-top: 12px; }
   .trussme-evidence { margin-top: 58px; }
   .evidence-heading { display: block; }
   .evidence-heading h4 { margin-top: 15px; }
