@@ -122,8 +122,8 @@ main, footer { max-width: 1920px; margin-inline: auto; }
 .evidence-arrow { position: absolute; top: 50%; z-index: 1; width: 44px; height: 44px; display: grid; place-items: center; border: 1px solid var(--rule-dark); border-radius: 50%; background: var(--canvas); color: var(--ink); box-shadow: 0 5px 14px rgba(23,33,40,.12); font: 22px/1 var(--font-mono); transform: translateY(-50%); transition: background .2s ease, border-color .2s ease, color .2s ease, transform .2s ease; }
 .evidence-arrow:hover { border-color: var(--oxide); background: var(--oxide); transform: translateY(-50%) scale(1.05); }
 .evidence-arrow:active { transform: translateY(-50%) scale(.96); }
-.evidence-arrow-left { left: clamp(-66px, -5vw, -34px); }
-.evidence-arrow-right { right: clamp(-66px, -5vw, -34px); }
+.evidence-arrow-left { left: 16px; }
+.evidence-arrow-right { right: 16px; }
 .evidence-caption-row { display: flex; justify-content: space-between; gap: 40px; padding: 20px 0 0; border-top: 1px solid var(--ink); }
 .evidence-current { margin: 0 0 13px; color: var(--oxide); font: 10px/1 var(--font-mono); }
 .evidence-current span { color: var(--ink); }
