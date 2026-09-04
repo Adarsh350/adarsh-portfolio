@@ -21,6 +21,13 @@ export function CaseStudy({ study }: { study: CaseStudyType }) {
         <div className="metric-band">
           {study.metrics.map((metric) => <div key={metric.label}><strong>{metric.value}</strong><span>{metric.label}</span></div>)}
         </div>
+        {study.id === "trussme" ? (
+          <div className="trussme-breakdown" aria-label="Trussme case study context">
+            <div><p className="micro-label">The opportunity</p><p>Connect campaign execution to lead quality through landing pages, tracking, automation, and reporting.</p></div>
+            <div><p className="micro-label">The build</p><p>Built the live client dashboard and automated bounce and campaign reporting on Cloudflare Workers, independently using Google Anti-Gravity.</p></div>
+            <div><p className="micro-label">My ownership</p><p>Led a four-person email team across more than 10 B2B and B2C clients while building the systems behind the work.</p></div>
+          </div>
+        ) : null}
         {study.id === "trussme" ? <TrussmeEvidence /> : null}
         <div className="case-detail-grid">
           <div className="case-work"><p className="micro-label">What I did</p><ol>{study.work.map((item) => <li key={item}>{item}</li>)}</ol></div>
