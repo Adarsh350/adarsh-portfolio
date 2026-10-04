@@ -113,7 +113,7 @@ Featured projects:
 - `chess-app`: offline-first product design, IndexedDB, local analysis, and Stockfish integration.
 - `Jobfill-Extension`: privacy-first browser automation for job applications.
 
-Secondary entries may include `mailchimp-reports-worker`, `claude-code-hooks`, `codex-usage`, and `graphify-github-obsidian`. Repository descriptions and technical facts come from the public GitHub repositories. The site does not show vanity star counts.
+Secondary entries may include `mailchimp-reports-worker`, `claude-code-hooks`, and `codex-usage`. Repository descriptions and technical facts come from the public GitHub repositories. The site does not show vanity star counts.
 
 ### 6. Career range
 

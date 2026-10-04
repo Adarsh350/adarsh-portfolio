@@ -15,8 +15,6 @@ node_modules
 next-env.d.ts
 *.tsbuildinfo
 
-# graphify cache
-graphify-out/cache/
 
 # Editor directories and files
 .vscode/*
@@ -32,6 +30,5 @@ graphify-out/cache/
 .claude/
 CLAUDE.md
 AGENTS.md
-graphify-out/
 .vercel
 .env*
